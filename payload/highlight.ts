@@ -16,7 +16,7 @@ const highlight: HighlightPayload = {
       keywords: ['Elasticsearch', 'OpenSearch', 'ELK'],
     },
     {
-      title: '벡터 검색 도입으로 LLM 비용 절감',
+      title: '벡터 검색 도입 및 비용 절감',
       description:
         '음원 서비스의 대화형 AI 음악 추천(AI DJ) 반복 LLM 호출 비용을 줄이기 위해 OpenSearch kNN 기반 벡터 검색 플랫폼을 신규 구축해 호출 비용을 약 20% 절감했습니다.',
       keywords: ['OpenSearch', 'kNN', 'Vector Search'],
