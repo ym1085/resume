@@ -37,7 +37,7 @@ export const _global: GlobalPayload = {
     name: 'Youngmin Kim',
     jobTitle: 'Backend Engineer',
     worksFor: '퍼닌 (Funin)',
-    url: 'https://ym1085.github.io/resume-nextjs',
+    url: 'https://ym1085.github.io/resume',
     sameAs: ['https://github.com/ym1085', 'https://www.linkedin.com/in/ym1085'],
     knowsAbout: ['Elasticsearch', 'OpenSearch', 'AWS', 'Java', 'Spring Boot'],
   },
