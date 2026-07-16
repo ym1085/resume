@@ -56,6 +56,7 @@ export type SectionKey =
   | 'presentation'
   | 'article'
   | 'education'
+  | 'military'
   | 'testimonial'
   | 'introduce'
   | 'etc';

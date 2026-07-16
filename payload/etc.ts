@@ -1,19 +1,15 @@
 import { EtcPayload } from '../types/etc';
 
+// 이 섹션은 component/etc/index.tsx 에서 제목을 'CERTIFICATES' 로 변경해 자격증 용도로 사용한다
 const etc: EtcPayload = {
   disable: false,
 
   list: [
     {
-      title: 'Featured on SuperTuxKart',
-      subTitle: "Steve & Oliver Baker's",
-      startedAt: '2016-07',
-    },
-    {
-      title: "Biting Linus Torvalds' Foot",
-      subTitle: 'Australia National Zoo & Aquarium',
-      startedAt: '1993-07',
-      endedAt: '1993-08',
+      title: 'AWS Certified Cloud Practitioner (CLF-C02)',
+      subTitle: 'Amazon Web Services',
+      startedAt: '2024-11',
+      endedAt: '2027-11',
     },
   ],
 };

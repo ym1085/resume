@@ -1,177 +1,50 @@
 import { SkillPayload, SkillItem } from '../types/skill';
 
-const programmingLanguages: SkillItem = {
-  category: 'Programming Languages',
+const languages: SkillItem = {
+  category: 'Languages',
+  items: [{ title: 'Java' }, { title: 'JavaScript' }, { title: 'HTML/CSS' }],
+};
+
+const frameworks: SkillItem = {
+  category: 'Frameworks & Libraries',
+  items: [{ title: 'Spring Boot' }, { title: 'MyBatis' }, { title: 'jQuery' }],
+};
+
+// Cloud/Search/Data/미들웨어를 하나로 통합
+// (Search 카테고리를 없애고 Elasticsearch·OpenSearch를 이 안으로 흡수, AWS 세부 서비스는 AWS로 대표)
+const infraDatabases: SkillItem = {
+  category: 'Infrastructure & Databases',
   items: [
-    {
-      title: 'C',
-      level: 3,
-    },
-    {
-      title: 'Shell Scripting',
-      level: 3,
-    },
-    {
-      title: 'Python',
-      level: 3,
-    },
-    {
-      title: 'Perl',
-      level: 2,
-    },
-    {
-      title: 'Golang',
-      level: 2,
-    },
-    {
-      title: 'Rust',
-      level: 1,
-    },
+    { title: 'AWS' },
+    { title: 'Docker' },
+    { title: 'nginx' },
+    { title: 'Elasticsearch' },
+    { title: 'OpenSearch' },
+    { title: 'Redis' },
+    { title: 'MySQL' },
+    { title: 'MS-SQL' },
   ],
 };
 
-const kernelDevelopment: SkillItem = {
-  category: 'Kernel Development',
-  items: [
-    {
-      title: 'Kernel Programming',
-      level: 3,
-    },
-    {
-      title: 'GNU Debugger',
-      level: 3,
-    },
-    {
-      title: 'Memory Management',
-      level: 2,
-    },
-    {
-      title: 'System Call Interface',
-      level: 2,
-    },
-  ],
+// 모니터링/로깅 도구를 Observability로 별도 분류
+const observability: SkillItem = {
+  category: 'Observability',
+  items: [{ title: 'Grafana' }, { title: 'Prometheus' }, { title: 'CloudWatch' }, { title: 'ELK' }],
 };
 
-const virtualization: SkillItem = {
-  category: 'Virtualization',
-  items: [
-    {
-      title: 'Docker',
-      level: 3,
-    },
-    {
-      title: 'KVM',
-      level: 3,
-    },
-    {
-      title: 'Xen',
-      level: 2,
-    },
-    {
-      title: 'VirtualBox',
-      level: 2,
-    },
-    {
-      title: 'VMware ESXi',
-      level: 1,
-    },
-  ],
-};
-
-const automation: SkillItem = {
-  category: 'Automation',
-  items: [
-    {
-      title: 'Ansible',
-      level: 3,
-    },
-    {
-      title: 'Puppet',
-      level: 3,
-    },
-    {
-      title: 'Chef',
-      level: 2,
-    },
-    {
-      title: 'Jenkins',
-      level: 2,
-    },
-    {
-      title: 'CI/CD Pipelines',
-      level: 1,
-    },
-    {
-      title: 'Infrastructure as Code',
-      level: 1,
-    },
-  ],
-};
-
-const networkSecurity: SkillItem = {
-  category: 'Network Security',
-  items: [
-    {
-      title: 'iptables',
-      level: 3,
-    },
-    {
-      title: 'OpenSSH',
-      level: 3,
-    },
-    {
-      title: 'OpenSSL',
-      level: 2,
-    },
-    {
-      title: 'NACLs',
-      level: 2,
-    },
-    {
-      title: 'VPN Technologies',
-      level: 2,
-    },
-    {
-      title: 'Intrusion Detection',
-      level: 1,
-    },
-  ],
+const tools: SkillItem = {
+  category: 'Tools & IDEs',
+  items: [{ title: 'Git' }, { title: 'GitHub' }, { title: 'GitLab' }, { title: 'Jenkins' }],
 };
 
 const misc: SkillItem = {
   category: 'Misc',
-  items: [
-    {
-      title: 'Coffee Brewing',
-    },
-    {
-      title: "Rubik's Cube Solving",
-    },
-    {
-      title: 'Table Tennis',
-    },
-    {
-      title: 'Guitar Playing',
-    },
-    {
-      title: 'Joke Telling',
-    },
-    {
-      title: 'Duct Tape Crafting',
-    },
-  ],
+  items: [{ title: 'DevOps' }],
 };
 
 const skill: SkillPayload = {
   disable: false,
-  skills: [
-    programmingLanguages,
-    kernelDevelopment,
-    virtualization,
-    automation,
-    networkSecurity,
-    misc,
-  ],
+  skills: [languages, frameworks, infraDatabases, observability, tools, misc],
 };
 
 export default skill;

@@ -1,7 +1,7 @@
 import { TestimonialPayload } from '../types/testimonial';
 
 const testimonial: TestimonialPayload = {
-  disable: false,
+  disable: true,
   list: [
     {
       name: 'John Doe',

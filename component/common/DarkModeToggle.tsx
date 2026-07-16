@@ -7,8 +7,8 @@ export function DarkModeToggle() {
   useEffect(() => {
     setMounted(true);
     const stored = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialDark = stored === 'dark' || (!stored && prefersDark);
+    // 저장된 값이 명시적으로 'light' 가 아니면 기본을 다크로 둔다
+    const initialDark = stored !== 'light';
 
     setIsDark(initialDark);
     if (initialDark) {

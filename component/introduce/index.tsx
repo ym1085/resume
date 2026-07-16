@@ -47,9 +47,11 @@ function IntroduceContent({ payload }: { payload: Payload }) {
                 )} (D+${latestUpdatedByNow})`}
               </span>
             </p>
-            <p className="text-end" style={Style.sign}>
-              {payload.sign}
-            </p>
+            {payload.sign && (
+              <p className="text-end" style={Style.sign}>
+                {payload.sign}
+              </p>
+            )}
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import { PresentationPayload } from '../types/presentation';
 
 const presentation: PresentationPayload = {
-  disable: false,
+  disable: true,
 
   list: [
     {

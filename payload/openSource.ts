@@ -1,7 +1,7 @@
 import { OpenSourcePayload } from '../types/open-source';
 
 const openSource: OpenSourcePayload = {
-  disable: false,
+  disable: true,
   list: [
     {
       title: 'Linux Kernel',

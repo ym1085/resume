@@ -18,9 +18,9 @@ export interface IntroducePayload extends CommonPayload {
   /**
    * ### 하단 싸인
    *
-   * @description 그냥 있어보여서 추가해봤다.
+   * @description 그냥 있어보여서 추가해봤다. 값이 없으면 싸인 영역을 렌더링하지 않는다.
    */
-  sign: string;
+  sign?: string;
 
   /**
    * ### 마지막 업데이트 날짜

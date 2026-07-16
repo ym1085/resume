@@ -1,7 +1,7 @@
 import { ArticlePayload } from '../types/article';
 
 const article: ArticlePayload = {
-  disable: false,
+  disable: true,
 
   list: [
     {

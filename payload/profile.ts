@@ -1,61 +1,60 @@
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { ProfilePayload } from '../types/profile';
 
-const image = '/sample_tux.png';
+// 프로필 사진: public/profile.jpg 에 본인 사진 파일을 넣으면 이 경로로 교체된다
+const image = '/profile.jpg';
 
 const profile: ProfilePayload = {
   disable: false,
 
-  // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
   image,
   name: {
-    title: 'Tux Linux Penguin',
-    small: '(Tux)',
+    title: '김영민',
+    small: 'Youngmin Kim',
   },
   contact: [
     {
-      title: 'tux@linux.org',
-      link: 'mailto:tux@linux.org',
+      title: 'youngmin1085@gmail.com',
+      link: 'mailto:youngmin1085@gmail.com',
       icon: faEnvelope,
     },
     {
-      title: 'Please contact me by email',
-      icon: faPhone,
-      badge: true,
-    },
-    {
-      link: 'https://github.com/uyu423/resume-nextjs',
+      link: 'https://github.com/ym1085',
       icon: faGithub,
     },
     {
-      link: 'https://www.facebook.com/groups/ubuntu.ko',
-      icon: faFacebook,
+      link: 'https://www.linkedin.com/in/ym1085',
+      icon: faLinkedin,
+    },
+    {
+      title: 'sw-ym.tistory.com',
+      link: 'https://sw-ym.tistory.com',
+      icon: faGlobe,
     },
   ],
   notice: {
-    title:
-      "The content below is all fictitious and is just a sample from 'https://github.com/uyu423/resume-nextjs'.",
+    title: 'Backend Engineer / Search Platform & Cloud Infrastructure / 6+ years',
     icon: faBell,
   },
-  tagline: 'Open Source Enthusiast | Full Stack Developer',
+  tagline: 'Search Platform & Cloud Infrastructure',
   headings: [
-    { value: '5+', label: 'Years of Experience' },
-    { value: '10+', label: 'Projects Completed' },
-    { value: '1K+', label: 'GitHub Contributions' },
+    { value: '6+', label: 'Years of Experience' },
+    { value: '500-1,000', label: 'Avg. Search TPS' },
+    { value: '190+', label: 'Tech Posts' },
   ],
   ctas: [
     {
       label: 'Email Me',
-      link: 'mailto:tux@linux.org',
+      link: 'mailto:youngmin1085@gmail.com',
       icon: faEnvelope,
       variant: 'primary',
     },
     {
       label: 'GitHub',
-      link: 'https://github.com/uyu423/resume-nextjs',
+      link: 'https://github.com/ym1085',
       icon: faGithub,
       variant: 'secondary',
     },

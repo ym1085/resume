@@ -10,6 +10,7 @@ import education from './education';
 import article from './article';
 import testimonial from './testimonial';
 import etc from './etc';
+import military from './military';
 import footer from './footer';
 
 import { _global } from './_global';
@@ -42,6 +43,7 @@ const Payload: Payload = {
   testimonial,
   education,
   etc,
+  military,
   footer,
 
   _global,
@@ -60,6 +62,7 @@ interface Payload {
   article: ArticlePayload;
   testimonial: TestimonialPayload;
   etc: EtcPayload;
+  military: EtcPayload;
   footer: FooterPayload;
 
   _global: GlobalPayload;

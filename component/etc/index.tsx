@@ -11,17 +11,17 @@ import { Section } from '../common/Section';
 type Payload = EtcPayload;
 type Item = EtcItem;
 
-export function EtcSection({ payload }: { payload: Payload }) {
+export function EtcSection({ payload, title = 'CERTIFICATES' }: { payload: Payload; title?: string }) {
   return (
     <Section payload={payload}>
-      <EtcContent payload={payload} />
+      <EtcContent payload={payload} title={title} />
     </Section>
   );
 }
 
-function EtcContent({ payload }: { payload: Payload }) {
+function EtcContent({ payload, title }: { payload: Payload; title: string }) {
   return (
-    <CommonSection title="ETC">
+    <CommonSection title={title}>
       <EtcRow payload={payload} />
     </CommonSection>
   );
