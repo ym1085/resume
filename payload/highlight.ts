@@ -6,13 +6,13 @@ const highlight: HighlightPayload = {
     {
       title: '검색 인프라 AWS 전환',
       description:
-        'IDC 기반 검색 시스템을 AWS로 옮기는 전환을 진행하며, Elasticsearch 클러스터를 EC2 기반으로 재구축했습니다.',
+        'IDC 기반 검색 시스템의 AWS 마이그레이션을 진행하며 Elasticsearch 클러스터를 EC2 기반으로 재구축했습니다.',
       keywords: ['AWS', 'Elasticsearch'],
     },
     {
       title: '대규모 검색/추천 플랫폼 운영',
       description:
-        '30억+ 문서, 5개 클러스터, 30+ 노드 규모의 검색 API를 평균 TPS 500~1,000으로 안정 운영했습니다.',
+        'Elasticsearch와 OpenSearch 기반 검색/추천 플랫폼의 API와 인프라를 개발하고 운영하며 성능 최적화와 장애 대응을 수행했습니다.',
       keywords: ['Elasticsearch', 'OpenSearch', 'ELK'],
     },
     {

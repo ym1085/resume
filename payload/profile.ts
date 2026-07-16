@@ -36,12 +36,12 @@ const profile: ProfilePayload = {
     },
   ],
   notice: {
-    title: 'Backend Engineer / Search Platform & Cloud Infrastructure / 6+ years',
+    title: 'Backend Engineer / Search Platform & Cloud Infrastructure / 5+ years',
     icon: faBell,
   },
-  tagline: 'Search Platform & Cloud Infrastructure',
+  tagline: 'Backend & Search Platform & Cloud Infrastructure',
   headings: [
-    { value: '6+', label: 'Years of Experience' },
+    { value: '5+', label: 'Years of Experience' },
     { value: '500-1,000', label: 'Avg. Search TPS' },
     { value: '190+', label: 'Tech Posts' },
   ],

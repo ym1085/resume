@@ -11,7 +11,7 @@ const frameworks: SkillItem = {
 };
 
 // Cloud/Search/Data/미들웨어를 하나로 통합
-// (Search 카테고리를 없애고 Elasticsearch·OpenSearch를 이 안으로 흡수, AWS 세부 서비스는 AWS로 대표)
+// (Search 카테고리를 없애고 Elasticsearch 및 OpenSearch를 이 안으로 흡수, AWS 세부 서비스는 AWS로 대표)
 const infraDatabases: SkillItem = {
   category: 'Infrastructure & Databases',
   items: [

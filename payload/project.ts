@@ -27,7 +27,7 @@ const project: ProjectPayload = {
       descriptions: [
         {
           content:
-            '30억+ 문서와 5개 클러스터 규모의 검색/추천 플랫폼을 운영하며 신규 API 개발과 성능, 장애 대응 담당',
+            '30억+ 문서, 5개 클러스터, 30+ 노드 규모의 검색/추천 플랫폼에서 신규 API 개발, 성능 최적화, 장애 대응을 담당하고 검색 API를 평균 TPS 500~1,000으로 안정 운영',
           weight: 'MEDIUM',
         },
         {
@@ -37,9 +37,6 @@ const project: ProjectPayload = {
         {
           content:
             '글로벌 공연 플랫폼 STAYG 공연 검색/자동완성 API 신규 개발, 초성 검색과 오탈자 보정 쿼리를 구현해 오픈',
-        },
-        {
-          content: '30억+ 문서, 5개 클러스터, 30+ 노드 규모 검색 API 운영, 평균 TPS 500~1,000',
         },
         { content: '일 1,153만 건 검색 로그 수집 ELK 파이프라인 구축' },
         { content: '연말 트래픽 2~3배 급증 병목 분석 후 ElastiCache 도입, 이듬해 무장애 운영' },
@@ -65,7 +62,7 @@ const project: ProjectPayload = {
       ],
     },
     {
-      title: 'Terraform 기반 AWS 인프라 provisioning',
+      title: 'Terraform 기반 AWS 인프라 구축 및 환경 관리',
       where: 'Side Project / Infra',
       startedAt: '2026-04',
       descriptions: [
@@ -79,7 +76,7 @@ const project: ProjectPayload = {
       ],
     },
     {
-      title: 'Kubernetes & ArgoCD 기반 GitOps 배포 환경',
+      title: 'Kubernetes와 ArgoCD 기반 GitOps 배포 환경 구축',
       where: 'Side Project / Infra',
       startedAt: '2025-02',
       descriptions: [
@@ -92,7 +89,7 @@ const project: ProjectPayload = {
       ],
     },
     {
-      title: 'Spring 기반 E-commerce 백엔드 아키텍처 설계',
+      title: '농산물 판매 플랫폼 백엔드 설계 및 구현',
       where: 'Side Project / Backend',
       startedAt: '2025-01',
       descriptions: [

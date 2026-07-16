@@ -13,17 +13,14 @@ const experience: ExperiencePayload = {
           descriptions: [
             { content: '대규모 검색/추천 플랫폼 백엔드 API 개발 및 AWS 기반 검색 인프라 운영' },
             {
-              content:
-                '30억+ 문서와 5개 Elasticsearch/OpenSearch 클러스터 검색 서비스 설계 및 운영',
+              content: '5개 Elasticsearch/OpenSearch 클러스터 검색 서비스 설계 및 운영',
             },
-            { content: 'IDC 기반 검색 시스템을 AWS로 옮기는 전반적인 전환 주도, EC2 기반 클러스터 재구축' },
+            { content: 'IDC 기반 검색 시스템의 AWS 전환, EC2 기반 클러스터 재구축' },
             {
-              content:
-                '음원 서비스 AI DJ에 OpenSearch kNN 벡터 검색을 도입해 LLM 호출 비용 약 20% 절감',
+              content: 'OpenSearch kNN 기반 벡터 검색 플랫폼 구축 및 운영',
             },
-            { content: 'Compute Optimizer, Trusted Advisor, CloudWatch 지표 기반 인프라 비용 지속 최적화' },
+            { content: 'Compute Optimizer, CloudWatch 등 리소스 지표 기반 비용 최적화' },
             { content: 'Prometheus, Grafana 통합 모니터링 구축 및 성능, 장애 대응' },
-            { content: '별도 팀 리드 없이 약 3년간 검색 플랫폼 백엔드 개발부터 운영, 유지보수까지 책임지고 담당' },
           ],
           skillKeywords: [
             'Java',

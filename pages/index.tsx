@@ -66,11 +66,18 @@ function Yosume() {
   const { seo } = Payload._global;
   const sectionOrder = getSectionOrder(Payload._global.sectionOrder);
 
+  // public/ 파일(favicon 등)은 assetPrefix가 자동으로 안 붙으므로 직접 붙인다
+  // 예: '/favicon.ico' -> '/resume/favicon.ico' (dev에서는 prefix가 빈 문자열)
+  const assetPrefix = process.env.NEXT_PUBLIC_ASSET_PREFIX ?? '';
+  const faviconHref = Payload._global.favicon.startsWith('/')
+    ? `${assetPrefix}${Payload._global.favicon}`
+    : Payload._global.favicon;
+
   return (
     <>
       <Head>
         <title>{Payload._global.headTitle}</title>
-        <link rel="shortcut icon" href={Payload._global.favicon} />
+        <link rel="shortcut icon" href={faviconHref} />
         {seo.description && <meta name="description" content={seo.description} />}
         {seo.openGraph?.title && <meta property="og:title" content={seo.openGraph.title} />}
         {seo.openGraph?.description && (
