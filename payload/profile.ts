@@ -36,13 +36,13 @@ const profile: ProfilePayload = {
     },
   ],
   notice: {
-    title: 'Backend Engineer / Search Platform & Cloud Infrastructure / 5+ years',
+    title: 'Building scalable search platforms on AWS | 5+ years',
     icon: faBell,
   },
   tagline: 'Backend & Search Platform & Cloud Infrastructure',
   headings: [
     { value: '5+', label: 'Years of Experience' },
-    { value: '500-1,000', label: 'Avg. Search TPS' },
+    { value: '1억+', label: 'Annual Cost Saved' },
     { value: '190+', label: 'Tech Posts' },
   ],
   ctas: [

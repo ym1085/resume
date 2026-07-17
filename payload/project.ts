@@ -5,7 +5,7 @@ const project: ProjectPayload = {
   list: [
     {
       title: '검색 인프라 AWS 전환 및 무중단 마이그레이션',
-      where: '퍼닌 (Funin) / Backend / Infra',
+      where: '퍼닌 (Funin) | Backend & Infra',
       startedAt: '2023-01',
       endedAt: '2023-07',
       descriptions: [
@@ -22,7 +22,7 @@ const project: ProjectPayload = {
     },
     {
       title: '대규모 검색/추천 플랫폼 개발 및 운영',
-      where: '퍼닌 (Funin) / Backend / Infra',
+      where: '퍼닌 (Funin) | Backend & Infra',
       startedAt: '2021-12',
       descriptions: [
         {
@@ -39,7 +39,10 @@ const project: ProjectPayload = {
             '글로벌 공연 플랫폼 STAYG 공연 검색/자동완성 API 신규 개발, 초성 검색과 오탈자 보정 쿼리를 구현해 오픈',
         },
         { content: '일 1,153만 건 검색 로그 수집 ELK 파이프라인 구축' },
-        { content: '연말 트래픽 2~3배 급증 병목 분석 후 ElastiCache 도입, 이듬해 무장애 운영' },
+        {
+          content:
+            '매년 12월 31일 평시 대비 2~3배로 급증하는 트래픽의 병목을 분석해 ElastiCache 도입, 이듬해 연말 무장애 운영',
+        },
         {
           content:
             'Compute Optimizer, Trusted Advisor, CloudWatch 지표 기반으로 EC2/ECS 인스턴스를 지속적으로 최적화해 누적 월 약 800만원(연 약 1억원) 비용 절감',
@@ -48,7 +51,7 @@ const project: ProjectPayload = {
     },
     {
       title: '신규 게임 사전예약 시스템 개발',
-      where: '게임덱스 (Gamedex) / Backend',
+      where: '게임덱스 (Gamedex) | Backend',
       startedAt: '2020-04',
       endedAt: '2021-06',
       descriptions: [
@@ -63,7 +66,7 @@ const project: ProjectPayload = {
     },
     {
       title: 'Terraform 기반 AWS 인프라 구축 및 환경 관리',
-      where: 'Side Project / Infra',
+      where: 'Side Project | Infra',
       startedAt: '2026-04',
       descriptions: [
         {
@@ -77,7 +80,7 @@ const project: ProjectPayload = {
     },
     {
       title: 'Kubernetes와 ArgoCD 기반 GitOps 배포 환경 구축',
-      where: 'Side Project / Infra',
+      where: 'Side Project | Infra',
       startedAt: '2025-02',
       descriptions: [
         {
@@ -90,7 +93,7 @@ const project: ProjectPayload = {
     },
     {
       title: '농산물 판매 플랫폼 백엔드 설계 및 구현',
-      where: 'Side Project / Backend',
+      where: 'Side Project | Backend',
       startedAt: '2025-01',
       descriptions: [
         {

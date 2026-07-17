@@ -8,7 +8,7 @@ const experience: ExperiencePayload = {
       title: '퍼닌 (Funin)',
       positions: [
         {
-          title: 'Backend / Cloud Engineer',
+          title: 'Backend & Cloud Engineer',
           startedAt: '2021-12',
           descriptions: [
             { content: '대규모 검색/추천 플랫폼 백엔드 API 개발 및 AWS 기반 검색 인프라 운영' },
