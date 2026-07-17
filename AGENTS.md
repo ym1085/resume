@@ -1,6 +1,6 @@
 <!-- Generated: 2026-02-17 | Updated: 2026-02-17 -->
 
-# resume-nextjs
+# resume
 
 ## Purpose
 Next.js 기반 정적 웹 이력서 생성기. `payload/` 디렉토리의 데이터 파일만 수정하면 개인 웹 이력서를 생성할 수 있다. Static HTML로 export하여 GitHub Pages에 배포.
