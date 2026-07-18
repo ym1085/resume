@@ -15,12 +15,12 @@ const experience: ExperiencePayload = {
             {
               content: '5개 Elasticsearch/OpenSearch 클러스터 검색 서비스 설계 및 운영',
             },
-            { content: 'IDC 기반 검색 시스템의 AWS 전환, EC2 기반 클러스터 재구축' },
+            { content: 'IDC 기반 검색 시스템의 AWS 무중단 이관 및 검색 인프라 재구축' },
             {
               content: 'OpenSearch kNN 기반 벡터 검색 플랫폼 구축 및 운영',
             },
             { content: 'Compute Optimizer, CloudWatch 등 리소스 지표 기반 비용 최적화' },
-            { content: 'Prometheus, Grafana 통합 모니터링 구축 및 성능, 장애 대응' },
+            { content: 'Prometheus, Grafana 통합 모니터링 구축 및 장애 대응' },
           ],
           skillKeywords: [
             'Java',
@@ -28,7 +28,6 @@ const experience: ExperiencePayload = {
             'Elasticsearch',
             'OpenSearch',
             'AWS',
-            'ElastiCache',
             'MySQL',
             'MS-SQL',
             'ELK',

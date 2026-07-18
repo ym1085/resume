@@ -51,6 +51,7 @@ export type SectionKey =
   | 'highlight'
   | 'experience'
   | 'project'
+  | 'sideProject'
   | 'skill'
   | 'openSource'
   | 'presentation'

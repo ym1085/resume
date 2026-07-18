@@ -11,6 +11,7 @@ import { OpenSourceSection } from '../component/openSource';
 import { PresentationSection } from '../component/presentation';
 import { ProfileSection } from '../component/profile';
 import { ProjectSection } from '../component/project';
+import { SideProjectSection } from '../component/sideProject';
 import { SkillSection } from '../component/skill';
 import { FloatingNav } from '../component/nav/FloatingNav';
 import { DarkModeToggle } from '../component/common/DarkModeToggle';
@@ -24,6 +25,7 @@ const SECTION_MAP: Record<SectionKey, ReactNode> = {
   highlight: <HighlightSection payload={Payload.highlight} />,
   experience: <ExperienceSection payload={Payload.experience} />,
   project: <ProjectSection payload={Payload.project} />,
+  sideProject: <SideProjectSection payload={Payload.sideProject} />,
   skill: <SkillSection payload={Payload.skill} />,
   openSource: <OpenSourceSection payload={Payload.openSource} />,
   presentation: <PresentationSection payload={Payload.presentation} />,
@@ -40,6 +42,7 @@ const DEFAULT_SECTION_ORDER: SectionKey[] = [
   'highlight',
   'experience',
   'project',
+  'sideProject',
   'skill',
   'openSource',
   'presentation',

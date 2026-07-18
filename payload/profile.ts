@@ -1,7 +1,6 @@
-import { faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faGlobe, faSeedling } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { ProfilePayload } from '../types/profile';
 
 // 프로필 사진: public/profile.jpg 에 본인 사진 파일을 넣으면 이 경로로 교체된다
@@ -36,8 +35,8 @@ const profile: ProfilePayload = {
     },
   ],
   notice: {
-    title: 'Building scalable search platforms on AWS | 5+ years',
-    icon: faBell,
+    title: 'solve problems, share knowledge, grow together',
+    icon: faSeedling,
   },
   tagline: 'Backend & Search Platform & Cloud Infrastructure',
   headings: [

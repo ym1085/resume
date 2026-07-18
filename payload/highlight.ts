@@ -6,7 +6,7 @@ const highlight: HighlightPayload = {
     {
       title: '검색 인프라 AWS 전환',
       description:
-        'IDC 기반 검색 시스템의 AWS 마이그레이션을 진행하며 Elasticsearch 클러스터를 EC2 기반으로 재구축했습니다.',
+        'IDC에서 운영하던 검색 시스템 전체를 AWS로 이관하고, ECS Fargate 기반 검색 API와 Elasticsearch 클러스터를 무중단으로 전환했습니다.',
       keywords: ['AWS', 'Elasticsearch'],
     },
     {

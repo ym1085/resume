@@ -10,8 +10,8 @@ const frameworks: SkillItem = {
   items: [{ title: 'Spring Boot' }, { title: 'MyBatis' }, { title: 'jQuery' }],
 };
 
-// Cloud/Search/Data/미들웨어를 하나로 통합
-// (Search 카테고리를 없애고 Elasticsearch 및 OpenSearch를 이 안으로 흡수, AWS 세부 서비스는 AWS로 대표)
+// Cloud/Search/Data/미들웨어 + 모니터링/로깅(Observability)을 하나로 통합
+// (Search 카테고리를 없애고 Elasticsearch 및 OpenSearch를 흡수, AWS 세부 서비스는 AWS로 대표)
 const infraDatabases: SkillItem = {
   category: 'Infrastructure & Databases',
   items: [
@@ -23,28 +23,26 @@ const infraDatabases: SkillItem = {
     { title: 'Redis' },
     { title: 'MySQL' },
     { title: 'MS-SQL' },
+    { title: 'Grafana' },
+    { title: 'Prometheus' },
+    { title: 'CloudWatch' },
+    { title: 'ELK' },
   ],
-};
-
-// 모니터링/로깅 도구를 Observability로 별도 분류
-const observability: SkillItem = {
-  category: 'Observability',
-  items: [{ title: 'Grafana' }, { title: 'Prometheus' }, { title: 'CloudWatch' }, { title: 'ELK' }],
 };
 
 const tools: SkillItem = {
   category: 'Tools & IDEs',
-  items: [{ title: 'Git' }, { title: 'GitHub' }, { title: 'GitLab' }, { title: 'Jenkins' }],
+  items: [{ title: 'Git' }, { title: 'GitHub' }, { title: 'GitLab' }, { title: 'Notion' }],
 };
 
 const misc: SkillItem = {
-  category: 'Misc',
-  items: [{ title: 'DevOps' }],
+  category: 'Others',
+  items: [{ title: 'DevOps' }, { title: 'Jenkins' }],
 };
 
 const skill: SkillPayload = {
   disable: false,
-  skills: [languages, frameworks, infraDatabases, observability, tools, misc],
+  skills: [languages, frameworks, infraDatabases, tools, misc],
 };
 
 export default skill;

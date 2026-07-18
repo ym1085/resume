@@ -41,5 +41,5 @@ export const _global: GlobalPayload = {
     sameAs: ['https://github.com/ym1085', 'https://www.linkedin.com/in/ym1085'],
     knowsAbout: ['Elasticsearch', 'OpenSearch', 'AWS', 'Java', 'Spring Boot'],
   },
-  sectionOrder: ['introduce', 'highlight', 'experience', 'project', 'skill', 'education', 'etc'],
+  sectionOrder: ['introduce', 'highlight', 'experience', 'project', 'sideProject', 'skill', 'education', 'etc'],
 };
