@@ -17,6 +17,13 @@ export interface ProjectItem {
   /** ### 프로젝트 제목 */
   title: string;
 
+  /**
+   * ### 왼쪽 라벨 (예: 저장소 이름)
+   *
+   * @description 지정 시 왼쪽 칸에 날짜 대신 이 값을 표시한다. `undefined` 이면 기간을 표시한다.
+   */
+  name?: string;
+
   /** ### 어디서 수행했는지 (or subtitle) */
   where: string;
 

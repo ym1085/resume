@@ -166,9 +166,6 @@ img {
 .split-left {
   text-align: right;
 }
-.split-row--full {
-  grid-template-columns: 1fr;
-}
 
 @media screen and (max-width: 767px) {
   .split-row {
@@ -924,9 +921,6 @@ a:focus-visible {
   /* 5. Grid 레이아웃 A4 대응 (모바일 breakpoint는 screen only로 비활성) */
   .split-row {
     grid-template-columns: 160px 1fr !important;
-  }
-  .split-row--full {
-    grid-template-columns: 1fr !important;
   }
   .card-grid-3 {
     grid-template-columns: repeat(3, 1fr) !important;

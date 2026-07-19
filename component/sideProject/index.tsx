@@ -16,7 +16,7 @@ export function SideProjectSection({ payload }: { payload: Payload }) {
 function SideProjectContent({ payload }: { payload: Payload }) {
   return (
     <CommonSection title="SIDE PROJECTS">
-      <ProjectRow payload={payload} hidePeriod />
+      <ProjectRow payload={payload} />
     </CommonSection>
   );
 }

@@ -5,6 +5,7 @@ const sideProject: ProjectPayload = {
   list: [
     {
       title: 'Terraform 기반 AWS 인프라 구축 및 환경 관리',
+      name: 'sandbox-tf-provisioning',
       where: '개인 (Personal) | Infra',
       startedAt: '2026-04',
       descriptions: [
@@ -19,6 +20,7 @@ const sideProject: ProjectPayload = {
     },
     {
       title: 'Kubernetes와 ArgoCD 기반 GitOps 배포 환경 구축',
+      name: 'sandbox-k8s-gitops',
       where: '개인 (Personal) | Infra',
       startedAt: '2025-02',
       descriptions: [
@@ -32,6 +34,7 @@ const sideProject: ProjectPayload = {
     },
     {
       title: '농산물 판매 플랫폼 백엔드 설계 및 구현',
+      name: 'ecommerce-api',
       where: '개인 (Personal) | Backend',
       startedAt: '2025-01',
       descriptions: [
