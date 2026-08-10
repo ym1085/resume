@@ -5,7 +5,7 @@ const sideProject: ProjectPayload = {
   list: [
     {
       title: 'Terraform 기반 AWS 인프라 구축 및 환경 관리',
-      name: 'sandbox-tf-provisioning',
+      name: 'terraform-provisioning',
       where: '개인 (Personal) | Infra',
       startedAt: '2026-04',
       descriptions: [
@@ -15,12 +15,12 @@ const sideProject: ProjectPayload = {
         },
         { content: 'VPC, ELB, EC2/ECS, ECR, IAM, S3, Route53 등을 재사용 가능한 모듈로 설계' },
         { content: 'global → network → ecr → elb → compute → cicd 순의 스택 의존성 구조로 배포 자동화' },
-        { content: 'GitHub Repository', href: 'https://github.com/ym1085/sandbox-tf-provisioning' },
+        { content: 'GitHub Repository', href: 'https://github.com/ym1085/terraform-provisioning' },
       ],
     },
     {
       title: 'Kubernetes와 ArgoCD 기반 GitOps 배포 환경 구축',
-      name: 'sandbox-k8s-gitops',
+      name: 'kubernetes-gitops',
       where: '개인 (Personal) | Infra',
       startedAt: '2025-02',
       descriptions: [
@@ -29,12 +29,12 @@ const sideProject: ProjectPayload = {
           weight: 'MEDIUM',
         },
         { content: 'Helm 차트로 order-service, user-service 배포 템플릿 표준화' },
-        { content: 'GitHub Repository', href: 'https://github.com/ym1085/sandbox-k8s-gitops' },
+        { content: 'GitHub Repository', href: 'https://github.com/ym1085/kubernetes-gitops' },
       ],
     },
     {
       title: '농산물 판매 플랫폼 백엔드 설계 및 구현',
-      name: 'ecommerce-api',
+      name: 'farm-market-platform',
       where: '개인 (Personal) | Backend',
       startedAt: '2025-01',
       descriptions: [
@@ -47,7 +47,7 @@ const sideProject: ProjectPayload = {
           content:
             'Spring Data JPA + QueryDSL 데이터 접근, 전역 예외/검증 응답 체계 및 Service/Controller 테스트 작성',
         },
-        { content: 'GitHub Repository', href: 'https://github.com/ym1085/ecommerce-api' },
+        { content: 'GitHub Repository', href: 'https://github.com/ym1085/farm-market-platform' },
       ],
     },
   ],
