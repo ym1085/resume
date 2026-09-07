@@ -26,6 +26,7 @@ const infraDatabases: SkillItem = {
     { title: 'Grafana' },
     { title: 'Prometheus' },
     { title: 'CloudWatch' },
+    { title: 'Terraform' },
     { title: 'ELK' },
   ],
 };

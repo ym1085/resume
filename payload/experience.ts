@@ -33,6 +33,7 @@ const experience: ExperiencePayload = {
             'ELK',
             'Grafana',
             'Prometheus',
+            'Jenkins',
             'Shell Script',
           ],
         },
