@@ -1,49 +1,56 @@
 import { SkillPayload, SkillItem } from '../types/skill';
 
-const languages: SkillItem = {
-  category: 'Languages',
-  items: [{ title: 'Java' }, { title: 'JavaScript' }, { title: 'HTML/CSS' }],
+const backend: SkillItem = {
+  category: 'Backend',
+  items: [{ title: 'Java' }, { title: 'Spring Boot' }, { title: 'MyBatis' }],
 };
 
-const frameworks: SkillItem = {
-  category: 'Frameworks & Libraries',
-  items: [{ title: 'Spring Boot' }, { title: 'MyBatis' }, { title: 'jQuery' }],
+const databasesSearch: SkillItem = {
+  category: 'Database & Search',
+  items: [
+    { title: 'MySQL' },
+    { title: 'MS-SQL' },
+    { title: 'Redis' },
+    { title: 'Elasticsearch' },
+    { title: 'OpenSearch' },
+  ],
 };
 
-// Cloud/Search/Data/미들웨어 + 모니터링/로깅(Observability)을 하나로 통합
-// (Search 카테고리를 없애고 Elasticsearch 및 OpenSearch를 흡수, AWS 세부 서비스는 AWS로 대표)
-const infraDatabases: SkillItem = {
-  category: 'Infrastructure & Databases',
+const infrastructure: SkillItem = {
+  category: 'Infrastructure',
   items: [
     { title: 'AWS' },
     { title: 'Docker' },
-    { title: 'nginx' },
-    { title: 'Elasticsearch' },
-    { title: 'OpenSearch' },
-    { title: 'Redis' },
-    { title: 'MySQL' },
-    { title: 'MS-SQL' },
-    { title: 'Grafana' },
-    { title: 'Prometheus' },
-    { title: 'CloudWatch' },
     { title: 'Terraform' },
+    { title: 'nginx' },
+  ],
+};
+
+const devops: SkillItem = {
+  category: 'DevOps & Monitoring',
+  items: [
+    { title: 'DevOps' },
+    { title: 'Jenkins' },
+    { title: 'Prometheus' },
+    { title: 'Grafana' },
+    { title: 'CloudWatch' },
     { title: 'ELK' },
   ],
 };
 
 const tools: SkillItem = {
-  category: 'Tools & IDEs',
+  category: 'Tools & Collaboration',
   items: [{ title: 'Git' }, { title: 'GitHub' }, { title: 'GitLab' }, { title: 'Notion' }],
 };
 
-const misc: SkillItem = {
-  category: 'Others',
-  items: [{ title: 'DevOps' }, { title: 'Jenkins' }],
+const frontend: SkillItem = {
+  category: 'Frontend',
+  items: [{ title: 'JavaScript' }, { title: 'HTML/CSS' }, { title: 'jQuery' }],
 };
 
 const skill: SkillPayload = {
   disable: false,
-  skills: [languages, frameworks, infraDatabases, tools, misc],
+  skills: [backend, databasesSearch, infrastructure, devops, tools, frontend],
 };
 
 export default skill;

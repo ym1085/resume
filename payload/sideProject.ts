@@ -2,7 +2,7 @@ import { ProjectPayload } from '../types/project';
 
 const sideProject: ProjectPayload = {
   disable: false,
-  list: [
+  list: ([
     {
       title: 'Terraform 기반 AWS 인프라 구축 및 환경 관리',
       name: 'terraform-provisioning',
@@ -50,7 +50,30 @@ const sideProject: ProjectPayload = {
         { content: 'GitHub Repository', href: 'https://github.com/ym1085/farm-market-platform' },
       ],
     },
-  ],
+    {
+      title: 'FMS AWS 인프라 및 CI/CD 구축',
+      name: 'fms',
+      where: 'FMS | Infrastructure & CI/CD',
+      startedAt: '2026-08',
+      descriptions: [
+        {
+          content: 'Terraform 기반 AWS 인프라 전체 구성과 GitHub Actions CI/CD 구축을 단독 담당',
+          weight: 'MEDIUM',
+        },
+        {
+          content:
+            '네트워크, 보안, 데이터 저장소, 컴퓨팅을 역할별 스택으로 분리하고 개발 및 운영 환경의 Terraform 상태를 독립적으로 관리',
+        },
+        {
+          content:
+            'GitHub Actions 기반 인프라 변경 검토 및 배포 흐름을 구성하고, 운영 환경 승인과 주요 리소스 삭제 및 교체 차단 절차 적용',
+        },
+      ],
+    },
+  ] satisfies ProjectPayload['list'])
+    // GitOps 내용은 보존하고 이력서 노출만 제외한다.
+    .filter((project) => project.name !== 'kubernetes-gitops')
+    .sort((a, b) => Number(b.name === 'farm-market-platform') - Number(a.name === 'farm-market-platform')),
 };
 
 export default sideProject;
