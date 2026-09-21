@@ -1,51 +1,34 @@
 import { SkillPayload, SkillItem } from '../types/skill';
 
+// 항목 하나 = 화면의 불릿 한 줄 (관련 기술을 쉼표로 묶는다)
 const backend: SkillItem = {
   category: 'Backend',
-  items: [{ title: 'Java' }, { title: 'Spring Boot' }, { title: 'MyBatis' }],
+  items: [{ title: 'Java, Spring Boot, MyBatis' }, { title: 'Swagger, Spring REST Docs' }],
 };
 
 const databasesSearch: SkillItem = {
   category: 'Database & Search',
-  items: [
-    { title: 'MySQL' },
-    { title: 'MS-SQL' },
-    { title: 'Redis' },
-    { title: 'Elasticsearch' },
-    { title: 'OpenSearch' },
-  ],
+  items: [{ title: 'MySQL, MS-SQL' }, { title: 'Elasticsearch, OpenSearch, ELK' }],
 };
 
 const infrastructure: SkillItem = {
-  category: 'Infrastructure',
-  items: [
-    { title: 'AWS' },
-    { title: 'Docker' },
-    { title: 'Terraform' },
-    { title: 'nginx' },
-  ],
+  category: 'Cloud & Infra',
+  items: [{ title: 'AWS, Docker, Nginx, Terraform(Personal)' }],
 };
 
 const devops: SkillItem = {
-  category: 'DevOps & Monitoring',
-  items: [
-    { title: 'DevOps' },
-    { title: 'Jenkins' },
-    { title: 'Prometheus' },
-    { title: 'Grafana' },
-    { title: 'CloudWatch' },
-    { title: 'ELK' },
-  ],
+  category: 'CI/CD & Monitoring',
+  items: [{ title: 'Jenkins, Prometheus, Grafana, CloudWatch' }],
 };
 
 const tools: SkillItem = {
   category: 'Tools & Collaboration',
-  items: [{ title: 'Git' }, { title: 'GitHub' }, { title: 'GitLab' }, { title: 'Notion' }],
+  items: [{ title: 'Git, GitHub, GitLab' }, { title: 'nGrinder, Slack, Notion' }],
 };
 
 const frontend: SkillItem = {
   category: 'Frontend',
-  items: [{ title: 'JavaScript' }, { title: 'HTML/CSS' }, { title: 'jQuery' }],
+  items: [{ title: 'JavaScript, HTML/CSS, jQuery' }],
 };
 
 const skill: SkillPayload = {

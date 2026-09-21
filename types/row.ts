@@ -11,7 +11,10 @@ export interface RowLeft {
 export interface RowRight {
   title?: string;
   subTitle?: string;
+  overview?: string;
   descriptions?: RowDescription[];
+  skillKeywords?: string[];
+  architectureImage?: string;
 }
 
 /**

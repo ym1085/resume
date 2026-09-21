@@ -68,13 +68,13 @@ npm run dev
 
 ## Commands
 
-| 명령어 | 설명 |
-|--------|------|
-| `npm run dev` | 개발 서버 (localhost:3000) |
-| `npm run build` | 프로덕션 빌드 + Static HTML 생성 → `docs/` |
-| `npm run lint` | ESLint |
-| `npm run lint:fix` | ESLint + 자동 수정 |
-| `npm run typecheck` | TypeScript 타입 체크 |
+| 명령어              | 설명                                       |
+| ------------------- | ------------------------------------------ |
+| `npm run dev`       | 개발 서버 (localhost:3000)                 |
+| `npm run build`     | 프로덕션 빌드 + Static HTML 생성 → `docs/` |
+| `npm run lint`      | ESLint                                     |
+| `npm run lint:fix`  | ESLint + 자동 수정                         |
+| `npm run typecheck` | TypeScript 타입 체크                       |
 
 ## Structure
 
@@ -191,7 +191,7 @@ npm run dev
 - `sectionOrder?: SectionKey[]` — 섹션 렌더링 순서를 지정한다. 배열에 없는 섹션은 기본 순서대로 뒤에 추가된다. Profile은 항상 첫 번째, Footer는 항상 마지막.
   ```ts
   // 예시: Experience를 가장 먼저, Skill을 그 다음으로
-  sectionOrder: ['experience', 'skill']
+  sectionOrder: ['experience', 'skill'];
   // 나머지(highlight, project, openSource, ...)는 기본 순서대로 뒤에 추가
   ```
 - Type: [`GlobalPayload`](./types/global.ts)

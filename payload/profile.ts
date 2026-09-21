@@ -1,4 +1,4 @@
-import { faEnvelope, faGlobe, faSeedling } from '@fortawesome/free-solid-svg-icons';
+import { faCircleExclamation, faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { ProfilePayload } from '../types/profile';
@@ -35,14 +35,14 @@ const profile: ProfilePayload = {
     },
   ],
   notice: {
-    title: 'solve problems, share knowledge, grow together',
-    icon: faSeedling,
+    title: '백엔드와 인프라를 함께 다루며 서비스의 확장성과 안정성을 개선합니다.',
+    icon: faCircleExclamation,
   },
-  tagline: 'Backend & Search Platform & Cloud Infrastructure',
+  tagline: 'Backend Engineer | Search & Infrastructure',
   headings: [
-    { value: '5+', label: 'Years of Experience' },
-    { value: '1억+', label: 'Annual Cost Saved' },
+    { value: '6년', label: 'Experience' },
     { value: '190+', label: 'Tech Posts' },
+    { value: '30+', label: 'Search Nodes' },
   ],
   ctas: [
     {

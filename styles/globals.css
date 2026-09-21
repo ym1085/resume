@@ -254,6 +254,119 @@ img {
   background: var(--color-bg-subtle);
 }
 
+.callout {
+  margin: var(--space-sm) 0 var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 6px;
+  background: var(--color-accent-subtle);
+}
+
+.callout-body {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: 1.65;
+}
+
+.architecture-toggle {
+  margin-top: var(--space-xs);
+}
+
+.architecture-toggle > summary {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 4px 12px;
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 999px;
+  background: var(--color-accent-subtle);
+  list-style: none;
+  width: fit-content;
+  transition: all var(--transition-fast);
+}
+
+.architecture-toggle > summary::-webkit-details-marker {
+  display: none;
+}
+
+.architecture-toggle > summary::before {
+  content: '▸';
+  display: inline-block;
+  transition: transform var(--transition-fast);
+}
+
+.architecture-toggle[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.architecture-toggle > summary:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.architecture-thumb {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.architecture-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+/* 네이티브 popover 라이트박스: 바깥 클릭 또는 Esc로 닫힘 */
+.architecture-lightbox {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 24px;
+  border: 0;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.architecture-lightbox:popover-open {
+  display: flex;
+}
+
+.architecture-lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.architecture-lightbox img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.tag--tenure {
+  border-color: rgba(217, 119, 6, 0.45);
+  color: #b45309;
+  background: rgba(217, 119, 6, 0.1);
+}
+
+[data-theme='dark'] .tag--tenure {
+  border-color: rgba(251, 191, 36, 0.45);
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.14);
+}
+
 /* === Buttons === */
 .cta-button {
   display: inline-flex;
@@ -559,7 +672,9 @@ img {
 }
 
 .skill-category {
-  color: var(--color-text-secondary);
+  color: var(--color-text);
+  font-size: var(--text-lg, 1.1rem);
+  font-weight: 700;
 }
 
 .skill-dots {
@@ -583,44 +698,44 @@ img {
   background: #cbd5e1;
 }
 
-.skill-chip-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs);
+.skill-item hr {
+  margin: var(--space-md) 0;
 }
 
-.skill-chip-item {
-  display: inline-flex;
+.skill-item .split-row {
   align-items: center;
-  gap: 6px;
-  max-width: 100%;
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  background: var(--color-bg-card);
-  padding: 4px 8px;
-  min-height: 28px;
 }
 
-.skill-chip-title {
-  font-size: var(--text-sm);
-  color: var(--color-text);
-  line-height: 1.25;
-  overflow-wrap: anywhere;
+.skill-item .split-left {
+  text-align: left;
 }
 
 @media screen and (max-width: 767px) {
-  .skill-chip-item {
-    min-height: 26px;
-    padding: 3px 7px;
-    gap: 5px;
+  .skill-item .split-row {
+    align-items: start;
+    gap: var(--space-xs);
   }
+}
 
-  .skill-chip-title {
-    font-size: 0.82rem;
-  }
+.skill-chip-list {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+.skill-chip-item {
+  margin-bottom: 2px;
+}
+
+.skill-chip-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-chip-title {
+  font-size: var(--text-base, 1rem);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 [data-theme='dark'] .skill-dot--filled {
@@ -1018,13 +1133,12 @@ a:focus-visible {
     border-color: #2563eb !important;
   }
 
-  /* 15. Skill chip / tag 축소 */
+  /* 15. Skill / tag 축소 */
   .skill-chip-item {
-    padding: 2px 6px !important;
-    min-height: 22px !important;
+    margin-bottom: 2px !important;
   }
   .skill-chip-title {
-    font-size: 8pt !important;
+    font-size: 9pt !important;
   }
   .skill-dot {
     width: 6px !important;

@@ -12,7 +12,6 @@ export interface SkillPayload extends ListSectionPayload {
    * ### 보유 기술 목록
    */
   skills: SkillItem[];
-
 }
 
 export interface SkillItem {

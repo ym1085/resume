@@ -4,7 +4,7 @@ const MAX_LEVEL = 3;
 
 export default function SkillRow({ skill, index }: { skill: SkillItem; index: number }) {
   return (
-    <div>
+    <div className="skill-item">
       {index > 0 ? <hr /> : null}
       <div className="split-row">
         <div className="split-left">

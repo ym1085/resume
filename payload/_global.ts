@@ -1,6 +1,6 @@
 import { GlobalPayload } from '../types/global';
 
-const favicon = '/favicon.ico';
+const favicon = '/favicon.svg';
 const previewImage = 'https://ym1085.github.io/resume/preview.jpg';
 
 const title = '김영민 | Backend Engineer';
@@ -41,5 +41,5 @@ export const _global: GlobalPayload = {
     sameAs: ['https://github.com/ym1085', 'https://www.linkedin.com/in/ym1085'],
     knowsAbout: ['Elasticsearch', 'OpenSearch', 'AWS', 'Java', 'Spring Boot'],
   },
-  sectionOrder: ['introduce', 'highlight', 'experience', 'project', 'sideProject', 'skill', 'education', 'etc'],
+  sectionOrder: ['introduce', 'highlight', 'skill', 'experience', 'project', 'sideProject', 'education', 'etc'],
 };
