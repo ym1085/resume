@@ -673,29 +673,9 @@ img {
 
 .skill-category {
   color: var(--color-text);
-  font-size: var(--text-lg, 1.1rem);
-  font-weight: 700;
-}
-
-.skill-dots {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  margin-left: 2px;
-}
-
-.skill-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-}
-
-.skill-dot--filled {
-  background: #3b82f6;
-}
-
-.skill-dot--empty {
-  background: #cbd5e1;
+  font-size: var(--text-base, 1rem);
+  font-weight: var(--fw-semibold);
+  line-height: 1.5;
 }
 
 .skill-item hr {
@@ -703,7 +683,7 @@ img {
 }
 
 .skill-item .split-row {
-  align-items: center;
+  align-items: start;
 }
 
 .skill-item .split-left {
@@ -718,32 +698,54 @@ img {
 }
 
 .skill-chip-list {
-  list-style: disc;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  list-style: none;
   margin: 0;
-  padding-left: 1.1em;
+  padding: 0;
 }
 
 .skill-chip-item {
-  margin-bottom: 2px;
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-bg-subtle);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
 }
 
-.skill-chip-item:last-child {
-  margin-bottom: 0;
+.skill-chip-item:hover {
+  border-color: var(--color-text-muted);
+  background: var(--color-bg-highlight);
 }
 
 .skill-chip-title {
-  font-size: var(--text-base, 1rem);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-regular);
   color: var(--color-text);
-  line-height: 1.6;
-  overflow-wrap: anywhere;
+  line-height: 1.5;
+  white-space: nowrap;
 }
 
-[data-theme='dark'] .skill-dot--filled {
-  background: #3b82f6;
+.skill-chip-context {
+  margin-left: 6px;
+  padding-left: 6px;
+  border-left: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.6875rem;
+  font-weight: var(--fw-medium);
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-[data-theme='dark'] .skill-dot--empty {
-  background: #475569;
+@media screen and (max-width: 767px) {
+  .skill-chip-item {
+    padding: 3px 8px;
+  }
 }
 
 .experience-keywords {
@@ -1107,15 +1109,7 @@ a:focus-visible {
     border-color: #ddd !important;
   }
 
-  /* 12. 다크모드에서도 skill-dot 라이트 색상 복원 */
-  html[data-theme='dark'] .skill-dot--filled {
-    background: #3b82f6 !important;
-  }
-  html[data-theme='dark'] .skill-dot--empty {
-    background: #cbd5e1 !important;
-  }
-
-  /* 13. 프로필 사진 인쇄 최적화 — 데스크탑과 동일한 레이아웃 유지 */
+  /* 12. 프로필 사진 인쇄 최적화 — 데스크탑과 동일한 레이아웃 유지 */
   .profile-image,
   img[alt*='profile'],
   img[alt*='Profile'] {
@@ -1135,16 +1129,10 @@ a:focus-visible {
 
   /* 15. Skill / tag 축소 */
   .skill-chip-item {
-    margin-bottom: 2px !important;
+    padding: 2px 7px !important;
   }
   .skill-chip-title {
     font-size: 9pt !important;
-  }
-  .skill-dot {
-    width: 6px !important;
-    height: 6px !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
   }
   .tag {
     font-size: 8pt !important;

@@ -26,6 +26,9 @@ export interface SkillSubItem {
   /** ### 보유 기술 이름 */
   title: string;
 
+  /** ### 실무 외 사용 맥락 등 기술에 대한 짧은 보조 정보 */
+  context?: string;
+
   /**
    * ### 보유 기술 수준
    *

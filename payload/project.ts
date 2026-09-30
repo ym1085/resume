@@ -12,7 +12,7 @@ const project: ProjectPayload = {
       descriptions: [
         {
           content:
-            'Compute Optimizer, CloudWatch 지표 기반 EC2/ECS 최적화로 월 약 800만원(예상) 비용 절감',
+            'Compute Optimizer, CloudWatch 지표 기반 EC2/ECS 최적화로 월 800만 원 이상 비용 절감 예상',
         },
         { content: 'EventBridge, Lambda 및 ECS 예약 작업을 활용한 STG 환경 운영 시간 최적화' },
         { content: 'CodeCommit 소스 저장소와 Jenkins 연동 기반 CI/CD 운영' },

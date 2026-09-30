@@ -22,7 +22,7 @@ const sideProject: ProjectPayload = {
           },
           {
             content:
-              'GitHub Actions 기반 Terraform Plan/Apply 워크플로 자동화, PR 인프라 변경 검토 및 운영 환경 승인 배포',
+              'GitHub Actions 기반 Terraform Plan/Apply 워크플로 자동화, PR에서 인프라 변경 사항을 검토하고 prod 적용 전 승인 단계를 거치도록 구성',
           },
         ],
       },
@@ -30,7 +30,7 @@ const sideProject: ProjectPayload = {
         title: '신규 서비스 AWS 인프라 IaC 구축 및 다중 환경 관리',
         where: 'Side | Infra',
         overview:
-          '실무에서 수동으로 반복하던 인프라 구성을 자동화하고자 IaC를 도입한 프로젝트입니다. 신규 Commerce 서비스 AWS 인프라를 Terraform으로 처음부터 구축하고 dev/stg/prod 환경을 분리 구성했습니다.',
+          'AWS 인프라 구성을 코드로 관리하기 위해 진행한 개인 프로젝트입니다. 신규 Commerce 서비스 AWS 인프라를 Terraform으로 처음부터 구축하고 dev/stg/prod 환경을 분리 구성했습니다.',
         startedAt: '2026-04',
         endedAt: '2026-06',
         descriptions: [
