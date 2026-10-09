@@ -17,7 +17,7 @@ function ArchitectureToggle({ src }: { src: string }) {
   const id = lightboxId(src);
   return (
     <>
-      <details className="architecture-toggle" open>
+      <details className="architecture-toggle">
         <summary>아키텍처 보기</summary>
         <button type="button" popoverTarget={id} className="architecture-thumb">
           <img

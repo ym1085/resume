@@ -5,7 +5,7 @@ const education: EducationPayload = {
 
   list: [
     {
-      title: 'Java 기반 웹/앱 개발 과정',
+      title: 'Java & Spring 기반 웹 애플리케이션 개발 과정',
       subTitle: '수료',
       startedAt: '2019-08',
       endedAt: '2020-02',

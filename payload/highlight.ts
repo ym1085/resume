@@ -15,7 +15,7 @@ const highlight: HighlightPayload = {
     },
     {
       title: '인프라 비용 최적화',
-      description: '지표 기반 리소스 최적화로 월 800만 원 이상 비용 절감 예상',
+      description: '지표 기반 리소스 최적화로 인프라 운영 비용 절감',
       keywords: ['AWS', 'CloudWatch', 'Compute Optimizer'],
     },
   ],
