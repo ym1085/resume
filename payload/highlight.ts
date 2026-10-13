@@ -10,7 +10,7 @@ const highlight: HighlightPayload = {
     },
     {
       title: '대규모 검색/추천 플랫폼',
-      description: '30억 건 이상 문서 규모의 검색/추천 API 개발과 장애 대응',
+      description: 'Elasticsearch 4개 클러스터, 39개 노드 운영',
       keywords: ['Elasticsearch', 'OpenSearch', 'ELK'],
     },
     {

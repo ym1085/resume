@@ -29,7 +29,7 @@ const project: ProjectPayload = {
       startedAt: '2023-01',
       endedAt: '2023-07',
       descriptions: [
-        { content: '검색 API 운영 환경을 AWS ECS Fargate 기반으로 구축해 무중단 전환' },
+        { content: '검색 API를 AWS ECS Fargate로 이전' },
         {
           content:
             '30억 건 이상의 문서 처리를 위한 Elasticsearch 클러스터를 EC2 기반으로 신규 구축하고 데이터 마이그레이션',
