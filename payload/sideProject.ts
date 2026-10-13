@@ -8,7 +8,7 @@ const sideProject: ProjectPayload = {
         title: '피트니스 서비스 회원 시스템 통합 플랫폼 구축',
         where: 'Side | Backend & Infra',
         startedAt: '2026-08',
-        architectureImage: '/aws.png',
+        architectureImage: '/resume_infra.svg',
         descriptions: [
           {
             content:
