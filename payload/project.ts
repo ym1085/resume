@@ -10,9 +10,16 @@ const project: ProjectPayload = {
       descriptions: [
         {
           content:
+            'EC2 약 50대, ECS 서비스 6개 운영, Auto Scaling과 멀티 AZ 구성으로 가용성 확보',
+        },
+        {
+          content:
             'Compute Optimizer와 CloudWatch 지표를 바탕으로 EC2와 ECS 리소스를 사용량에 맞게 조정해 운영 비용 절감',
         },
-        { content: 'EventBridge, Lambda 및 ECS 예약 작업을 활용한 STG 환경 운영 시간 최적화' },
+        {
+          content:
+            'EventBridge, Lambda, ECS 예약 작업으로 STG 환경 업무 시간 외 자동 중지 (일 가동 24시간 -> 9.5시간)',
+        },
         { content: 'CodeCommit 소스 저장소와 Jenkins 연동 기반 CI/CD 운영' },
       ],
     },
@@ -41,10 +48,13 @@ const project: ProjectPayload = {
           content:
             'LLM 반복 호출을 줄이기 위해 OpenSearch kNN으로 유사한 요청을 검색하고 기존 결과를 재사용하는 구조 구축',
         },
-        { content: '회원 청취 이력 기반 개인화 추천 신규 API 개발' },
+        { content: '회원 청취 이력 정산 데이터 기반 개인화 선호 아티스트 추천 API 신규 개발' },
         { content: '기존 검색 엔진을 활용한 공연 예매 플랫폼 검색/자동완성 API 개발' },
         { content: '일 1,200만 건의 검색 로그를 수집하는 ELK 파이프라인 구축' },
-        { content: '연말 자정 검색 요청이 급증하면서 발생한 응답 지연을 ElastiCache 도입으로 해소' },
+        {
+          content:
+            '연말 자정 ES 검색량 급증(분당 7,000 -> 20,000건)으로 인한 응답 지연, ElastiCache 도입으로 이듬해 동일 피크 지연 해소',
+        },
       ],
     },
     {

@@ -11,11 +11,10 @@ const experience: ExperiencePayload = {
           title: 'Backend & Cloud Engineer',
           startedAt: '2021-12',
           descriptions: [
-            { content: '대규모 검색/추천 플랫폼 API 개발 및 운영' },
+            { content: '검색/추천 플랫폼 API 개발 및 Elasticsearch, OpenSearch 운영' },
             { content: 'IDC 검색 시스템 AWS 무중단 마이그레이션 및 인프라 재구축' },
-            { content: 'OpenSearch kNN 기반 벡터 검색 플랫폼 구축' },
-            { content: 'ELK 기반 검색 로그 수집 파이프라인 구축' },
-            { content: 'Prometheus, Grafana, CloudWatch 기반 모니터링 구축 및 비용 최적화' },
+            { content: 'OpenSearch kNN 기반 LLM 응답 재사용 기능 개발' },
+            { content: 'Prometheus, Grafana, CloudWatch 기반 모니터링 및 AWS 비용 최적화' },
           ],
           skillKeywords: [
             'Java',
