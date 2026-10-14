@@ -4,6 +4,27 @@ const project: ProjectPayload = {
   disable: false,
   list: [
     {
+      title: '대규모 검색/추천 플랫폼 백엔드 개발 및 운영',
+      where: '퍼닌 (Funin) | Backend & Infra',
+      startedAt: '2021-12',
+      descriptions: [
+        {
+          content:
+            'LLM 반복 호출을 줄이기 위해 OpenSearch kNN으로 유사한 요청을 검색하고 기존 결과를 재사용하는 구조 구축',
+        },
+        {
+          content:
+            '회원 청취 이력 정산 데이터 기반 선호 아티스트 추천 API 개발, 주간 사용자 130만 명 기준 Redis 캐시 용량 및 서버 사양 산정',
+        },
+        { content: '기존 검색 엔진을 활용한 공연 예매 플랫폼 검색/자동완성 API 개발' },
+        { content: '일 1,200만 건의 검색 로그를 수집하는 ELK 파이프라인 구축' },
+        {
+          content:
+            '연말 자정 ES 검색량 급증(분당 7,000 -> 20,000건)으로 인한 응답 지연, ElastiCache 도입으로 이듬해 동일 피크 지연 해소',
+        },
+      ],
+    },
+    {
       title: '검색 서비스 AWS 인프라 운영 및 비용 최적화',
       where: '퍼닌 (Funin) | Backend & Infra',
       startedAt: '2023-08',
@@ -40,24 +61,6 @@ const project: ProjectPayload = {
       ],
     },
     {
-      title: '대규모 검색/추천 플랫폼 백엔드 개발 및 운영',
-      where: '퍼닌 (Funin) | Backend & Infra',
-      startedAt: '2021-12',
-      descriptions: [
-        {
-          content:
-            'LLM 반복 호출을 줄이기 위해 OpenSearch kNN으로 유사한 요청을 검색하고 기존 결과를 재사용하는 구조 구축',
-        },
-        { content: '회원 청취 이력 정산 데이터 기반 개인화 선호 아티스트 추천 API 신규 개발' },
-        { content: '기존 검색 엔진을 활용한 공연 예매 플랫폼 검색/자동완성 API 개발' },
-        { content: '일 1,200만 건의 검색 로그를 수집하는 ELK 파이프라인 구축' },
-        {
-          content:
-            '연말 자정 ES 검색량 급증(분당 7,000 -> 20,000건)으로 인한 응답 지연, ElastiCache 도입으로 이듬해 동일 피크 지연 해소',
-        },
-      ],
-    },
-    {
       title: '신규 게임 사전예약 시스템 개발',
       where: '게임덱스 (Gamedex) | Backend',
       startedAt: '2020-04',
@@ -65,7 +68,7 @@ const project: ProjectPayload = {
       descriptions: [
         { content: '한/영/일/중 다국어 사전예약 이벤트 페이지 API 개발 및 DB 설계' },
         { content: 'jQuery/JavaScript 기반 프론트엔드 데이터 가공 및 API 연동' },
-        { content: '사내 인트라넷 백오피스 기능 개발 및 레거시 유지보수' },
+        { content: '사내 인트라넷 게시판/댓글/파일 업로드 기능 개발 및 레거시 유지보수' },
       ],
     },
   ],
