@@ -15,7 +15,7 @@ const highlight: HighlightPayload = {
     },
     {
       title: '인프라 비용 최적화',
-      description: '지표 기반 리소스 최적화로 인프라 운영 비용 절감',
+      description: '사용률 지표 기반 EC2와 ECS 사양 축소로 월 약 800만 원 규모 비용 절감',
       keywords: ['AWS', 'CloudWatch', 'Compute Optimizer'],
     },
   ],

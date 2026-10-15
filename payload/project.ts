@@ -16,7 +16,7 @@ const project: ProjectPayload = {
           content:
             '회원 청취 이력 정산 데이터 기반 선호 아티스트 추천 API 개발, 주간 사용자 130만 명 기준 Redis 캐시 용량 및 서버 사양 산정',
         },
-        { content: '기존 검색 엔진을 활용한 공연 예매 플랫폼 검색/자동완성 API 개발' },
+        { content: '공연 검색/자동완성 API 개발 및 검색 랭킹 설계' },
         { content: '일 1,200만 건의 검색 로그를 수집하는 ELK 파이프라인 구축' },
         {
           content:
@@ -35,7 +35,7 @@ const project: ProjectPayload = {
         },
         {
           content:
-            'Compute Optimizer와 CloudWatch 지표를 바탕으로 EC2와 ECS 리소스를 사용량에 맞게 조정해 운영 비용 절감',
+            '사용률 지표 기반으로 EC2와 ECS 사양을 축소해 월 약 800만 원 규모 비용 절감',
         },
         {
           content:
