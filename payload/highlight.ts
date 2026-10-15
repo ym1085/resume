@@ -10,7 +10,7 @@ const highlight: HighlightPayload = {
     },
     {
       title: '대규모 검색/추천 플랫폼',
-      description: 'Elasticsearch 4개 클러스터, 39개 노드 운영',
+      description: 'Elasticsearch 클러스터 4개(노드 39대) 운영',
       keywords: ['Elasticsearch', 'OpenSearch', 'ELK'],
     },
     {
