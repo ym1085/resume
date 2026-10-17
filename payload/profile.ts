@@ -41,7 +41,7 @@ const profile: ProfilePayload = {
   tagline: 'Backend Engineer | Search & Infrastructure',
   headings: [
     { value: '6년', label: 'Experience' },
-    { value: '190+', label: 'Tech Posts' },
+    { value: '180+', label: 'Tech Posts' },
     { value: '30+', label: 'Search Nodes' },
   ],
   ctas: [
