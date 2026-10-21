@@ -1,5 +1,6 @@
 import { ListSectionPayload } from './common';
 import { RowDescription } from './row';
+import { ProjectItem } from './project';
 
 /**
  * ### Sample Rendering
@@ -57,4 +58,8 @@ export interface ExperiencePosition {
    * @description undefined 가 아닐 경우 해당 경험 하단에 **Skill Keywords** 목록이 추가된다.
    */
   skillKeywords?: string[];
+  projects?: Pick<
+    ProjectItem,
+    'title' | 'startedAt' | 'endedAt' | 'descriptions' | 'skillKeywords'
+  >[];
 }

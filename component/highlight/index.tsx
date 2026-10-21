@@ -15,7 +15,7 @@ export function HighlightSection({ payload }: { payload: Payload }) {
 function HighlightContent({ payload }: { payload: Payload }) {
   return (
     <div className="editorial-section">
-      <ShowMoreWrapper showMoreCount={payload.showMoreCount} className="card-grid-3">
+      <ShowMoreWrapper showMoreCount={payload.showMoreCount} className="card-grid-2">
         {payload.list.map((item, index) => (
           <HighlightCard key={index.toString()} item={item} />
         ))}

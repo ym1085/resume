@@ -671,6 +671,20 @@ img {
   margin-bottom: 3px;
 }
 
+.experience-project {
+  margin-top: var(--space-lg);
+}
+
+.experience-project-title {
+  margin-bottom: var(--space-xs);
+  font-size: var(--text-base, 1rem);
+  font-weight: var(--fw-semibold);
+}
+
+.experience-project > ul {
+  margin-top: var(--space-sm);
+}
+
 .skill-category {
   color: var(--color-text);
   font-size: var(--text-base, 1rem);
@@ -1077,13 +1091,16 @@ a:focus-visible {
   }
 
   /* 9. 페이지 분할 제어 */
-  .experience-item,
+  .experience-project,
   .project-item,
   .testimonial-card,
   .pullquote,
   .highlight-card,
   .split-row {
     break-inside: avoid;
+  }
+  .experience-position-row {
+    break-inside: auto;
   }
   h2,
   h3,

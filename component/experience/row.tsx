@@ -1,6 +1,7 @@
 import { DateTime } from 'luxon';
 import { ExperienceItem, ExperiencePosition } from '../../types/experience';
 import Util from '../common/Util';
+import { CommonDescription } from '../common/CommonDescription';
 
 type PositionWithDates = ExperiencePosition & {
   startedAtDate: DateTime;
@@ -83,12 +84,30 @@ export default function ExperienceRow({ item, index }: { item: ExperienceItem; i
           </div>
           <div>
             <i className="experience-position-title">{position.title}</i>
-            <ul className="experience-description-list">
-              {position.descriptions.map((description, descIndex) => (
-                <li key={descIndex.toString()}>{description.content}</li>
-              ))}
-              {createSkillKeywords(position.skillKeywords)}
-            </ul>
+            {(position.descriptions.length > 0 || (position.skillKeywords?.length ?? 0) > 0) && (
+              <ul className="experience-description-list">
+                {position.descriptions.map((description, descIndex) => (
+                  <li key={descIndex.toString()}>{description.content}</li>
+                ))}
+                {createSkillKeywords(position.skillKeywords)}
+              </ul>
+            )}
+            {position.projects?.map((project) => (
+              <div className="experience-project" key={project.title}>
+                <h5 className="experience-project-title">{project.title}</h5>
+                <div className="experience-position-period">
+                  {Util.formatDateRange(project.startedAt, project.endedAt)}
+                </div>
+                <CommonDescription descriptions={project.descriptions} />
+                <div className="experience-keywords">
+                  {project.skillKeywords?.map((keyword) => (
+                    <span key={keyword} className="tag tag--accent">
+                      {keyword}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       ))}
