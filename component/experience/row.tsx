@@ -120,9 +120,9 @@ function createOverallWorkingPeriod(positions: PositionWithDates[]) {
   const startedAt = positions[positions.length - 1].startedAtDate;
   const isCurrentlyEmployed = positions.some((position) => position.isCurrent);
 
-  // 재직 중일 때는 종료일 없이 표시
+  // 재직 중일 때는 현재로 표시
   if (isCurrentlyEmployed) {
-    return `${startedAt.toFormat(DATE_FORMAT)} ~`;
+    return `${startedAt.toFormat(DATE_FORMAT)} ~ 현재`;
   }
 
   const endedAtDates = positions.filter(hasEndedAtDate).map((position) => position.endedAtDate);
@@ -159,7 +159,7 @@ function createWorkingPeriod(startedAt: DateTime, endedAt?: DateTime | null) {
   const DATE_FORMAT = Util.LUXON_DATE_FORMAT.YYYY_DOT_LL;
 
   if (!endedAt) {
-    return `${startedAt.toFormat(DATE_FORMAT)} ~`;
+    return `${startedAt.toFormat(DATE_FORMAT)} ~ 현재`;
   }
 
   return `${startedAt.toFormat(DATE_FORMAT)} ~ ${endedAt.toFormat(DATE_FORMAT)}`;

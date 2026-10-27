@@ -752,7 +752,6 @@ img {
   font-weight: var(--fw-medium);
   line-height: 1.5;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   white-space: nowrap;
 }
 

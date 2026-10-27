@@ -5,7 +5,7 @@ const highlight: HighlightPayload = {
   list: [
     {
       title: '백엔드 API 개발',
-      description: '검색 / 추천 API 개발 및 LLM 응답 재사용 기능 상용 적용',
+      description: '검색 및 추천 API, AI Agent용 벡터 검색 API 개발',
       keywords: ['Java', 'Spring Boot', 'Elasticsearch', 'OpenSearch'],
     },
     {

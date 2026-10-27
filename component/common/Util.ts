@@ -45,7 +45,7 @@ function formatYearMonth(dateStr: string): string {
 /** 시작일~종료일 날짜 범위 문자열 생성 */
 function formatDateRange(startedAt: string, endedAt?: string): string {
   const start = formatYearMonth(startedAt);
-  if (!endedAt) return `${start} ~`;
+  if (!endedAt) return `${start} ~ 현재`;
   return `${start} ~ ${formatYearMonth(endedAt)}`;
 }
 

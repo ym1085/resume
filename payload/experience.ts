@@ -13,49 +13,12 @@ const experience: ExperiencePayload = {
           descriptions: [],
           projects: [
             {
-              title: '대규모 검색/추천 플랫폼 백엔드 개발 및 운영',
-              startedAt: '2021-12',
-              descriptions: [
-                {
-                  content:
-                    '연말 자정 Elasticsearch Search Rate 급증(7,000 → 20,000)에 따른 응답 지연을 ElastiCache 검색 결과 캐싱으로 개선, 이듬해 피크 구간 지연 해소',
-                },
-                {
-                  content:
-                    '청취 이력 정산 데이터 기반 선호 아티스트 추천 API 개발, Elasticsearch 조회 부하 완화를 위한 주간 캐싱 적용 및 주간 사용자 130만 명 기준 캐시 용량 / 서버 사양 산정',
-                },
-                {
-                  content:
-                    'LLM 중복 호출을 줄이기 위한 OpenSearch kNN 기반 유사 요청 응답 재사용 기능 개발 및 상용 서비스 적용',
-                },
-                {
-                  content:
-                    '기존 검색 엔진의 분석기를 활용한 공연 검색 / 자동완성 API 개발 및 검색 랭킹 설계',
-                },
-                {
-                  content: '일 1,200만 건의 검색 로그를 수집하는 ELK 파이프라인 구축',
-                },
-              ],
-              skillKeywords: [
-                'Java',
-                'Spring Boot',
-                'Elasticsearch',
-                'OpenSearch',
-                'ElastiCache',
-                'MySQL',
-                'MS-SQL',
-                'Logstash',
-                'Filebeat',
-                'Shell Script',
-              ],
-            },
-            {
               title: '검색 서비스 AWS 인프라 운영 및 비용 최적화',
               startedAt: '2023-08',
               descriptions: [
                 {
                   content:
-                    'EC2 약 50대, ECS 서비스 6개 운영, Auto Scaling과 멀티 AZ 구성으로 가용성 확보',
+                    'EC2 약 50대, ECS 서비스 6개 운영 및 Auto Scaling과 멀티 AZ로 가용성 확보',
                 },
                 {
                   content:
@@ -63,7 +26,7 @@ const experience: ExperiencePayload = {
                 },
                 {
                   content:
-                    'STG 환경 일 가동 시간 약 60% 단축(24시간 → 9.5시간), EventBridge / Lambda / ECS 예약 작업 기반 업무 시간 외 자동 중지',
+                    'STG 환경을 업무 시간 외 자동 중지해 일 가동 시간 약 60% 단축(24시간 → 9.5시간)',
                 },
               ],
               skillKeywords: [
@@ -84,11 +47,11 @@ const experience: ExperiencePayload = {
               descriptions: [
                 {
                   content:
-                    '기존 IDC 검색 서비스를 유지하며 트래픽을 단계적으로 전환, 검색 API를 ECS Fargate로 무중단 이전',
+                    '트래픽 단계적 전환으로 IDC 검색 API를 ECS Fargate로 무중단 이전',
                 },
                 {
                   content:
-                    '30억 건 이상의 문서 처리를 위한 Elasticsearch 클러스터를 EC2 기반으로 신규 구축하고 데이터 마이그레이션',
+                    'EC2 기반 Elasticsearch 클러스터 구축 및 문서 30억 건 이상 마이그레이션',
                 },
                 {
                   content: 'Jenkins CI/CD 파이프라인 구축으로 배포 자동화',
@@ -108,6 +71,43 @@ const experience: ExperiencePayload = {
                 'Grafana',
                 'Elasticsearch',
                 'nGrinder',
+              ],
+            },
+            {
+              title: '대규모 검색/추천 플랫폼 백엔드 개발 및 운영',
+              startedAt: '2021-12',
+              descriptions: [
+                {
+                  content:
+                    '사용자 청취 이력을 분석해 선호 아티스트를 제공하는 API 개발, 주간 사용자 130만 명 기준 캐시 용량 산정',
+                },
+                {
+                  content:
+                    'AI Agent LLM 비용 절감을 위한 OpenSearch kNN 벡터 검색 API 개발',
+                },
+                {
+                  content:
+                    '공연 검색 및 자동완성 API 개발, 기존 분석기를 활용한 검색 랭킹 설계',
+                },
+                {
+                  content:
+                    '연말 자정 Elasticsearch Search Rate 급증(7,000 → 20,000)에 따른 응답 지연을 ElastiCache 검색 결과 캐싱으로 개선, 이듬해 피크 구간 지연 해소',
+                },
+                {
+                  content: '일 1,200만 건의 검색 로그를 수집하는 ELK 파이프라인 구축',
+                },
+              ],
+              skillKeywords: [
+                'Java',
+                'Spring Boot',
+                'Elasticsearch',
+                'OpenSearch',
+                'ElastiCache',
+                'MySQL',
+                'MS-SQL',
+                'Logstash',
+                'Filebeat',
+                'Shell Script',
               ],
             },
           ],
@@ -132,10 +132,11 @@ const experience: ExperiencePayload = {
                   content: '한/영/일/중 다국어 사전예약 이벤트 페이지 API 개발 및 DB 설계',
                 },
                 {
-                  content: 'jQuery/JavaScript 기반 프론트엔드 데이터 가공 및 API 연동',
+                  content: 'JavaScript/jQuery를 활용한 사전예약 페이지와 백엔드 API 연동',
                 },
                 {
-                  content: '사내 인트라넷 게시판/댓글/파일 업로드 기능 개발 및 레거시 유지보수',
+                  content:
+                    '사내 인트라넷 게시판, 댓글, 첨부파일 기능 개발 및 DB 설계부터 화면 연동까지 담당',
                 },
               ],
               skillKeywords: [

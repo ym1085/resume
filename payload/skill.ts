@@ -18,7 +18,8 @@ const databasesSearch: SkillItem = {
     { title: 'MS-SQL' },
     { title: 'Elasticsearch' },
     { title: 'OpenSearch' },
-    { title: 'ELK' },
+    { title: 'Logstash' },
+    { title: 'Filebeat' },
   ],
 };
 
@@ -38,6 +39,7 @@ const devops: SkillItem = {
     { title: 'Jenkins' },
     { title: 'Prometheus' },
     { title: 'Grafana' },
+    { title: 'Kibana' },
     { title: 'CloudWatch' },
   ],
 };
@@ -51,12 +53,14 @@ const tools: SkillItem = {
     { title: 'nGrinder' },
     { title: 'Slack' },
     { title: 'Notion' },
+    { title: 'Wiki' },
+    { title: 'Jira' },
   ],
 };
 
 const frontend: SkillItem = {
   category: 'Frontend',
-  items: [{ title: 'JavaScript' }, { title: 'HTML/CSS' }, { title: 'jQuery' }],
+  items: [{ title: 'HTML/CSS' }, { title: 'JavaScript' }, { title: 'jQuery' }],
 };
 
 const skill: SkillPayload = {

@@ -6,7 +6,7 @@ const sideProject: ProjectPayload = {
     [
       {
         title: '피트니스 서비스 회원 시스템 통합 플랫폼 구축',
-        where: 'Side | Backend & Infra',
+        where: 'Backend & Infra',
         startedAt: '2026-08',
         architectureImage: '/resume_infra.svg',
         descriptions: [
@@ -27,7 +27,7 @@ const sideProject: ProjectPayload = {
       {
         title: 'Kubernetes와 ArgoCD 기반 GitOps 배포 환경 구축',
         name: 'kubernetes-gitops',
-        where: 'Side | Infra',
+        where: 'Infra',
         startedAt: '2025-02',
         descriptions: [
           {
@@ -41,7 +41,7 @@ const sideProject: ProjectPayload = {
       {
         title: '농산물 판매 플랫폼 백엔드 설계 및 구현',
         name: 'farm-market-platform',
-        where: 'Side | Backend',
+        where: 'Backend',
         startedAt: '2025-01',
         descriptions: [
           {
