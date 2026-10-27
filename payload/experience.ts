@@ -83,7 +83,8 @@ const experience: ExperiencePayload = {
               endedAt: '2023-07',
               descriptions: [
                 {
-                  content: '검색 API를 AWS ECS Fargate로 이전',
+                  content:
+                    '기존 IDC 검색 서비스를 유지하며 트래픽을 단계적으로 전환, 검색 API를 ECS Fargate로 무중단 이전',
                 },
                 {
                   content:

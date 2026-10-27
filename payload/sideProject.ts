@@ -12,7 +12,7 @@ const sideProject: ProjectPayload = {
         descriptions: [
           {
             content:
-              '서비스별로 분산된 회원 관리 기능과 관리자 메뉴를 한곳에서 사용할 수 있도록 통합 어드민 개발 중',
+              '서비스별로 분산된 회원 관리와 관리자 기능을 통합하기 위한 DB 및 API 설계 진행',
           },
           {
             content:
