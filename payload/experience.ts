@@ -28,6 +28,10 @@ const experience: ExperiencePayload = {
                   content:
                     'STG 환경을 업무 시간 외 자동 중지해 일 가동 시간 약 60% 단축(24시간 → 9.5시간)',
                 },
+                {
+                  content:
+                    'CloudWatch 모니터링과 알림 구성으로 장애 징후 탐지 및 대응 체계 개선',
+                },
               ],
               skillKeywords: [
                 'EC2',
