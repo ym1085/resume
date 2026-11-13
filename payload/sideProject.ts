@@ -12,7 +12,7 @@ const sideProject: ProjectPayload = {
         descriptions: [
           {
             content:
-              'PT 수업 통계와 회원 목록 조회 API 개발 및 관리자 페이지 연동',
+              'PT 수업 통계와 회원 목록을 한 화면에서 조회하도록 API 개발 및 관리자 페이지 연동',
           },
           {
             content: 'PT, OT, 라커 관련 테이블 설계 및 Flyway 마이그레이션 작성',

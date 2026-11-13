@@ -27,6 +27,12 @@ const experience: ExperiencePayload = {
                 {
                   content:
                     'STG 자동 중지로 일 가동 시간 약 60% 단축(24 → 9.5시간)',
+                  descriptions: [
+                    {
+                      content:
+                        'EC2는 EventBridge와 Lambda, ECS는 예약 작업으로 가동 시간 제어',
+                    },
+                  ],
                 },
                 {
                   content:
@@ -53,8 +59,7 @@ const experience: ExperiencePayload = {
               endedAt: '2023-07',
               descriptions: [
                 {
-                  content:
-                    '트래픽 단계적 전환으로 IDC 검색 API를 ECS Fargate로 무중단 이전',
+                  content: 'IDC 검색 API를 AWS ECS Fargate로 이전',
                 },
                 {
                   content:
@@ -85,12 +90,23 @@ const experience: ExperiencePayload = {
               startedAt: '2021-12',
               descriptions: [
                 {
-                  content:
-                    '사용자 청취 이력을 분석해 선호 아티스트를 제공하는 API 개발, 주간 사용자 130만 명 기준 캐시 용량 산정',
+                  content: '사용자 청취 이력 기반 선호 아티스트 API 개발',
+                  descriptions: [
+                    {
+                      content: 'Elasticsearch 조회 부하 완화를 위한 주간 캐싱 적용',
+                    },
+                    {
+                      content: '주간 사용자 130만 명을 기준으로 캐시 용량 산정',
+                    },
+                  ],
                 },
                 {
-                  content:
-                    'AI Agent LLM 비용 절감을 위한 OpenSearch kNN 벡터 검색 API 개발',
+                  content: 'AI Agent의 LLM 반복 호출을 줄이기 위한 벡터 검색 API 개발',
+                  descriptions: [
+                    {
+                      content: 'OpenSearch kNN으로 유사 요청을 검색해 기존 응답을 재사용',
+                    },
+                  ],
                 },
                 {
                   content:

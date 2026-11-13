@@ -37,6 +37,7 @@ const devops: SkillItem = {
   category: 'CI/CD & Monitoring',
   items: [
     { title: 'Jenkins' },
+    { title: 'GitHub Actions' },
     { title: 'Prometheus' },
     { title: 'Grafana' },
     { title: 'Kibana' },
