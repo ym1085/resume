@@ -26,7 +26,7 @@ const experience: ExperiencePayload = {
                 },
                 {
                   content:
-                    'STG 환경을 업무 시간 외 자동 중지해 일 가동 시간 약 60% 단축(24시간 → 9.5시간)',
+                    'STG 자동 중지로 일 가동 시간 약 60% 단축(24 → 9.5시간)',
                 },
                 {
                   content:

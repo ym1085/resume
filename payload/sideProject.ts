@@ -12,16 +12,29 @@ const sideProject: ProjectPayload = {
         descriptions: [
           {
             content:
-              '서비스별로 분산된 회원 관리와 관리자 기능을 통합하기 위한 DB 및 API 설계 진행',
+              'PT 수업 통계와 회원 목록 조회 API 개발 및 관리자 페이지 연동',
+          },
+          {
+            content: 'PT, OT, 라커 관련 테이블 설계 및 Flyway 마이그레이션 작성',
           },
           {
             content:
-              '개발 환경과 운영 환경을 독립적으로 관리하도록 Terraform state를 분리하고, 인프라 역할별로 스택 구성',
+              '개발 및 운영 환경의 AWS 인프라를 Terraform으로 관리하고 공통 구성을 모듈화',
           },
           {
             content:
-              'GitHub Actions로 Terraform Plan/Apply를 자동화하고, PR 변경 사항 검토와 운영 환경 적용 전 승인 절차 구성',
+              'GitHub Actions에서 Terraform Plan을 검증해 주요 리소스 삭제와 교체 차단',
           },
+        ],
+        skillKeywords: [
+          'Java',
+          'Spring Boot',
+          'MyBatis',
+          'MariaDB',
+          'Flyway',
+          'AWS',
+          'Terraform',
+          'GitHub Actions',
         ],
       },
       {
