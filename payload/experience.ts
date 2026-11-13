@@ -113,9 +113,11 @@ const experience: ExperiencePayload = {
                     '공연 검색 및 자동완성 API 개발, 기존 분석기를 활용한 검색 랭킹 설계',
                 },
                 {
-                  content:
-                    '연말 자정 Elasticsearch Search Rate 급증(7,000 → 20,000)에 따른 응답 지연 대응',
+                  content: '연말 자정 트래픽 급증에 따른 검색 응답 지연 대응',
                   descriptions: [
+                    {
+                      content: 'Elasticsearch Search Rate 7,000 → 20,000 증가',
+                    },
                     {
                       content:
                         'ElastiCache 검색 결과 캐싱을 적용해 이듬해 피크 구간 지연 해소',
