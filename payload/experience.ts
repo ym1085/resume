@@ -32,6 +32,9 @@ const experience: ExperiencePayload = {
                   content:
                     'CloudWatch 모니터링과 알림 구성으로 장애 징후 탐지 및 대응 체계 개선',
                 },
+                {
+                  content: 'ISMS 인증 대응을 위한 서버 보안 점검 및 조치 수행',
+                },
               ],
               skillKeywords: [
                 'EC2',
@@ -95,7 +98,13 @@ const experience: ExperiencePayload = {
                 },
                 {
                   content:
-                    '연말 자정 Elasticsearch Search Rate 급증(7,000 → 20,000)에 따른 응답 지연을 ElastiCache 검색 결과 캐싱으로 개선, 이듬해 피크 구간 지연 해소',
+                    '연말 자정 Elasticsearch Search Rate 급증(7,000 → 20,000)에 따른 응답 지연 대응',
+                  descriptions: [
+                    {
+                      content:
+                        'ElastiCache 검색 결과 캐싱을 적용해 이듬해 피크 구간 지연 해소',
+                    },
+                  ],
                 },
                 {
                   content: '일 1,200만 건의 검색 로그를 수집하는 ELK 파이프라인 구축',
@@ -133,14 +142,11 @@ const experience: ExperiencePayload = {
               endedAt: '2021-06',
               descriptions: [
                 {
-                  content: '한/영/일/중 다국어 사전예약 이벤트 페이지 API 개발 및 DB 설계',
-                },
-                {
-                  content: 'JavaScript/jQuery를 활용한 사전예약 페이지와 백엔드 API 연동',
+                  content: '한/영/일/중 사전예약 페이지의 DB 설계, API 개발 및 화면 연동',
                 },
                 {
                   content:
-                    '사내 인트라넷 게시판, 댓글, 첨부파일 기능 개발 및 DB 설계부터 화면 연동까지 담당',
+                    '사내 인트라넷 게시판, 댓글, 첨부파일 기능의 DB 설계부터 개발 및 화면 연동까지 담당',
                 },
               ],
               skillKeywords: [
