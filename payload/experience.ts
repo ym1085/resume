@@ -90,10 +90,14 @@ const experience: ExperiencePayload = {
               startedAt: '2021-12',
               descriptions: [
                 {
-                  content: '사용자 청취 이력 기반 선호 아티스트 API 개발',
+                  content: '회원의 스트리밍 이력을 바탕으로 음악 앱 홈에 추천곡을 제공하는 API 개발',
                   descriptions: [
                     {
-                      content: 'Elasticsearch 조회 부하 완화를 위한 주간 캐싱 적용',
+                      content:
+                        '최근 재생곡과 비슷한 곡, 자주 듣는 아티스트의 인기곡, 선호 장르의 신곡 선별',
+                    },
+                    {
+                      content: 'ElastiCache에 회원별 추천 목록을 주 단위로 캐싱해 Elasticsearch 반복 조회 방지',
                     },
                     {
                       content: '주간 사용자 130만 명을 기준으로 캐시 용량 산정',
