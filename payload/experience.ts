@@ -97,7 +97,7 @@ const experience: ExperiencePayload = {
                         '최근 재생곡과 비슷한 곡, 자주 듣는 아티스트의 인기곡, 선호 장르의 신곡 선별',
                     },
                     {
-                      content: 'ElastiCache에 회원별 추천 목록을 주 단위로 캐싱해 Elasticsearch 반복 조회 방지',
+                      content: 'ElastiCache로 회원별 추천 목록을 주간 캐싱해 Elasticsearch 조회 감소',
                     },
                     {
                       content: '주간 사용자 130만 명을 기준으로 캐시 용량 산정',
@@ -113,18 +113,20 @@ const experience: ExperiencePayload = {
                   ],
                 },
                 {
-                  content:
-                    '공연 검색 및 자동완성 API 개발, 기존 분석기를 활용한 검색 랭킹 설계',
+                  content: '한국어, 영어, 일본어 공연 검색 및 자동완성 API 개발',
+                  descriptions: [
+                    { content: '공연명과 등록 키워드를 검색하고 공연명 완전 일치에 최고 가중치 적용' },
+                    { content: '한글 자소로 자동완성 후보를 찾고 화면 언어에 맞는 검색어 제공' },
+                  ],
                 },
                 {
-                  content: '연말 자정 트래픽 급증에 따른 검색 응답 지연 대응',
+                  content: '연말 자정 검색 API 지연에 대응해 ElastiCache에 검색 결과 캐싱',
                   descriptions: [
                     {
-                      content: 'Elasticsearch Search Rate 7,000 → 20,000 증가',
+                      content: 'Elasticsearch 피크 Search Rate 전년 대비 약 20% 감소(초당 2.5만 → 2만)',
                     },
                     {
-                      content:
-                        'ElastiCache 검색 결과 캐싱을 적용해 이듬해 피크 구간 지연 해소',
+                      content: '이듬해 자정 전후 검색엔진 최대 지연 시간 5ms, API 지연 재발 없음',
                     },
                   ],
                 },

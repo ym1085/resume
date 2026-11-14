@@ -11,19 +11,19 @@ const sideProject: ProjectPayload = {
         architectureImage: '/resume_infra.svg',
         descriptions: [
           {
-            content:
-              'PT 수업 통계와 회원 목록을 한 화면에서 조회하도록 API 개발 및 관리자 페이지 연동',
+            content: '관리자 화면에 PT 수업 현황과 회원 목록 조회 API 연동',
           },
           {
-            content: 'PT, OT, 라커 관련 테이블 설계 및 Flyway 마이그레이션 작성',
+            content: 'PT, OT, 라커 테이블 설계 및 Flyway 마이그레이션 작성',
           },
           {
-            content:
-              '개발 및 운영 환경의 AWS 인프라를 Terraform으로 관리하고 공통 구성을 모듈화',
+            content: '개발 및 운영 환경의 AWS 공통 구성을 Terraform 모듈로 관리',
           },
           {
-            content:
-              'GitHub Actions에서 Terraform Plan을 검증해 주요 리소스 삭제와 교체 차단',
+            content: 'GitHub Actions로 백엔드와 관리자 API의 CI/CD 구축',
+          },
+          {
+            content: 'Terraform Plan 검증으로 주요 리소스 삭제와 교체 차단',
           },
         ],
         skillKeywords: [
