@@ -11,7 +11,7 @@ const sideProject: ProjectPayload = {
         architectureImage: '/resume_infra.svg',
         descriptions: [
           {
-            content: '관리자 화면에 PT 수업 현황과 회원 목록 조회 API 연동',
+            content: 'PT 수업 현황과 회원 목록 조회 API 개발 및 관리자 화면 연동',
           },
           {
             content: 'PT, OT, 라커 테이블 설계 및 Flyway 마이그레이션 작성',

@@ -35,7 +35,7 @@ const profile: ProfilePayload = {
     },
   ],
   notice: {
-    title: '백엔드부터 인프라까지, 안정적인 서비스를 설계하고 운영합니다.',
+    title: '백엔드 개발부터 클라우드 인프라까지, 서비스의 개발과 운영을 함께 고민하는 엔지니어입니다.',
     icon: faCircleExclamation,
   },
   tagline: 'Backend Engineer | Search & Infrastructure',

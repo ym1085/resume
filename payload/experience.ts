@@ -72,7 +72,7 @@ const experience: ExperiencePayload = {
                   content: 'Prometheus, Grafana 통합 모니터링과 SNS/Slack 알림 체계 구축',
                 },
                 {
-                  content: 'nGrinder 부하 테스트로 검색 API 최대 처리량 측정 및 가용성 검증',
+                  content: 'nGrinder 부하 테스트로 검색 API의 최대 처리량 측정',
                 },
               ],
               skillKeywords: [
