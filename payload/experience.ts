@@ -132,6 +132,10 @@ const experience: ExperiencePayload = {
                 },
                 {
                   content: '일 1,200만 건의 검색 로그를 수집하는 ELK 파이프라인 구축',
+                  descriptions: [
+                    { content: 'Filebeat로 수집한 검색어 로그를 Logstash에서 가공해 Elasticsearch에 색인' },
+                    { content: '서비스별 로그 파일을 압축해 S3에 자동 보관' },
+                  ],
                 },
               ],
               skillKeywords: [
@@ -166,11 +170,16 @@ const experience: ExperiencePayload = {
               endedAt: '2021-06',
               descriptions: [
                 {
-                  content: '한/영/일/중 사전예약 페이지의 DB 설계, API 개발 및 화면 연동',
+                  content: '4개 언어 게임 사전예약 서비스의 DB 설계 및 API 개발',
                 },
                 {
-                  content:
-                    '사내 인트라넷 게시판, 댓글, 첨부파일 기능의 DB 설계부터 개발 및 화면 연동까지 담당',
+                  content: 'JavaScript와 jQuery를 활용한 사전예약 페이지 API 연동',
+                },
+                {
+                  content: '사내 인트라넷 게시판, 댓글, 첨부파일 기능 개발',
+                },
+                {
+                  content: '인트라넷 DB 설계 및 화면 연동',
                 },
               ],
               skillKeywords: [
