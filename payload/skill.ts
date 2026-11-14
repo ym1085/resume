@@ -10,6 +10,7 @@ const databasesSearch: SkillItem = {
   items: [
     { title: 'MySQL' },
     { title: 'MS-SQL' },
+    { title: 'MariaDB' },
     { title: 'Elasticsearch' },
     { title: 'OpenSearch' },
   ],

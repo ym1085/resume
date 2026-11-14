@@ -42,7 +42,7 @@ const profile: ProfilePayload = {
   headings: [
     { value: '6년', label: 'Experience' },
     { value: '180+', label: 'Tech Posts' },
-    { value: '30+', label: 'Search Nodes' },
+    { value: '30억+', label: 'Documents' },
   ],
   ctas: [
     {

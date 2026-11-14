@@ -36,7 +36,7 @@ const experience: ExperiencePayload = {
                 },
                 {
                   content:
-                    'CloudWatch 모니터링과 알림 구성으로 장애 징후 탐지 및 대응 체계 개선',
+                    'CloudWatch 경보와 SNS로 EC2, ECS 리소스 이상 징후 알림',
                 },
                 {
                   content: 'ISMS 인증 대응을 위한 서버 보안 점검 및 조치 수행',
@@ -60,19 +60,31 @@ const experience: ExperiencePayload = {
               descriptions: [
                 {
                   content: 'IDC 검색 API를 AWS ECS Fargate로 이전',
+                  descriptions: [
+                    {
+                      content: 'IDC Nginx에서 AWS로 트래픽을 단계적으로 전환해 무중단 이관',
+                    },
+                  ],
                 },
                 {
                   content:
                     'EC2 기반 Elasticsearch 클러스터 구축 및 문서 30억 건 이상 마이그레이션',
+                  descriptions: [
+                    {
+                      content: '증분 색인을 IDC와 AWS에 이중 적재해 전환 기간 데이터 정합성 유지',
+                    },
+                  ],
+                },
+                {
+                  content: 'Prometheus, Grafana로 검색 API 모니터링 및 Slack 알림 구축',
+                  descriptions: [
+                    {
+                      content: '여러 단계를 거쳐 전달되던 장애 알림을 Slack으로 직접 수신해 인지 시간 단축',
+                    },
+                  ],
                 },
                 {
                   content: 'Jenkins CI/CD 파이프라인 구축으로 배포 자동화',
-                },
-                {
-                  content: 'Prometheus, Grafana 통합 모니터링과 SNS/Slack 알림 체계 구축',
-                },
-                {
-                  content: 'nGrinder 부하 테스트로 검색 API의 최대 처리량 측정',
                 },
               ],
               skillKeywords: [
@@ -82,7 +94,6 @@ const experience: ExperiencePayload = {
                 'Prometheus',
                 'Grafana',
                 'Elasticsearch',
-                'nGrinder',
               ],
             },
             {
@@ -137,6 +148,9 @@ const experience: ExperiencePayload = {
                     { content: '서비스별 로그 파일을 압축해 S3에 자동 보관' },
                   ],
                 },
+                {
+                  content: '신규 API 오픈 전 STG 환경에서 nGrinder 부하 테스트로 최대 처리량 검증',
+                },
               ],
               skillKeywords: [
                 'Java',
@@ -148,6 +162,7 @@ const experience: ExperiencePayload = {
                 'MS-SQL',
                 'Logstash',
                 'Filebeat',
+                'nGrinder',
                 'Shell Script',
               ],
             },
@@ -173,13 +188,13 @@ const experience: ExperiencePayload = {
                   content: '4개 언어 게임 사전예약 서비스의 DB 설계 및 API 개발',
                 },
                 {
+                  content: '사전예약 현황을 확인하는 내부 통계 CMS 개발',
+                },
+                {
                   content: 'JavaScript와 jQuery를 활용한 사전예약 페이지 API 연동',
                 },
                 {
-                  content: '사내 인트라넷 게시판, 댓글, 첨부파일 기능 개발',
-                },
-                {
-                  content: '인트라넷 DB 설계 및 화면 연동',
+                  content: '사내 인트라넷 DB 설계 및 게시판, 댓글, 첨부파일 기능 개발',
                 },
               ],
               skillKeywords: [
