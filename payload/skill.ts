@@ -2,13 +2,7 @@ import { SkillPayload, SkillItem } from '../types/skill';
 
 const backend: SkillItem = {
   category: 'Backend',
-  items: [
-    { title: 'Java' },
-    { title: 'Spring Boot' },
-    { title: 'MyBatis' },
-    { title: 'Swagger' },
-    { title: 'Spring REST Docs' },
-  ],
+  items: [{ title: 'Java' }, { title: 'Spring Boot' }, { title: 'MyBatis' }],
 };
 
 const databasesSearch: SkillItem = {
@@ -18,45 +12,41 @@ const databasesSearch: SkillItem = {
     { title: 'MS-SQL' },
     { title: 'Elasticsearch' },
     { title: 'OpenSearch' },
-    { title: 'Logstash' },
-    { title: 'Filebeat' },
   ],
 };
 
 const infrastructure: SkillItem = {
-  category: 'Cloud & Infra',
+  category: 'Infra & CI/CD',
   items: [
     { title: 'AWS' },
     { title: 'Docker' },
     { title: 'Nginx' },
     { title: 'Terraform', context: 'Personal' },
+    { title: 'Jenkins' },
+    { title: 'GitHub Actions' },
   ],
 };
 
-const devops: SkillItem = {
-  category: 'CI/CD & Monitoring',
+const monitoring: SkillItem = {
+  category: 'Monitoring & Logging',
   items: [
-    { title: 'Jenkins' },
-    { title: 'GitHub Actions' },
     { title: 'Prometheus' },
     { title: 'Grafana' },
-    { title: 'Kibana' },
     { title: 'CloudWatch' },
+    { title: 'Kibana' },
+    { title: 'Logstash' },
+    { title: 'Filebeat' },
   ],
+};
+
+const docsTesting: SkillItem = {
+  category: 'Docs & Testing',
+  items: [{ title: 'Swagger' }, { title: 'Spring REST Docs' }, { title: 'nGrinder' }],
 };
 
 const tools: SkillItem = {
-  category: 'Tools & Collaboration',
-  items: [
-    { title: 'Git' },
-    { title: 'GitHub' },
-    { title: 'GitLab' },
-    { title: 'nGrinder' },
-    { title: 'Slack' },
-    { title: 'Notion' },
-    { title: 'Wiki' },
-    { title: 'Jira' },
-  ],
+  category: 'Tools',
+  items: [{ title: 'Git' }, { title: 'GitHub' }, { title: 'GitLab' }, { title: 'Jira' }],
 };
 
 const frontend: SkillItem = {
@@ -66,7 +56,7 @@ const frontend: SkillItem = {
 
 const skill: SkillPayload = {
   disable: false,
-  skills: [backend, databasesSearch, infrastructure, devops, tools, frontend],
+  skills: [backend, databasesSearch, infrastructure, monitoring, docsTesting, tools, frontend],
 };
 
 export default skill;

@@ -18,7 +18,7 @@ const experience: ExperiencePayload = {
               descriptions: [
                 {
                   content:
-                    'EC2 약 50대, ECS 서비스 6개 운영 및 Auto Scaling과 멀티 AZ로 가용성 확보',
+                    'EC2 약 50대, ECS 서비스 5개 운영 및 Auto Scaling과 멀티 AZ로 가용성 확보',
                 },
                 {
                   content:

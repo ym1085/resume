@@ -38,7 +38,7 @@ const profile: ProfilePayload = {
     title: '백엔드 개발부터 클라우드 인프라까지, 서비스의 개발과 운영을 함께 고민하는 엔지니어입니다.',
     icon: faCircleExclamation,
   },
-  tagline: 'Backend Engineer | Search & Infrastructure',
+  tagline: 'Backend Engineer | Cloud Infrastructure',
   headings: [
     { value: '6년', label: 'Experience' },
     { value: '180+', label: 'Tech Posts' },
