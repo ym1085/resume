@@ -19,7 +19,7 @@ export function ExperienceSection({ payload }: { payload: Payload }) {
 
 function ExperienceContent({ payload }: { payload: Payload }) {
   return (
-    <CommonSection title="EXPERIENCE">
+    <CommonSection title="WORK EXPERIENCE">
       {!payload.disableTotalPeriod && (
         <div className="split-row experience-summary-row">
           <div className="split-left">
