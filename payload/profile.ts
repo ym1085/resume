@@ -40,7 +40,7 @@ const profile: ProfilePayload = {
   },
   tagline: 'Backend Engineer | Cloud Infrastructure',
   headings: [
-    { value: '6년', label: 'Experience' },
+    { value: '7년', label: 'Experience' },
     { value: '180+', label: 'Tech Posts' },
     { value: '30억+', label: 'Documents' },
   ],
