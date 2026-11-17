@@ -5,7 +5,7 @@ const previewImage = 'https://ym1085.github.io/resume/preview.jpg';
 
 const title = '김영민 | Backend Engineer';
 const description =
-  '대규모 검색/추천 플랫폼과 AWS 인프라를 다루는 6년차 백엔드 엔지니어 김영민의 이력서입니다.';
+  '대규모 검색/추천 플랫폼과 AWS 인프라를 다루는 7년차 백엔드 엔지니어 김영민의 이력서입니다.';
 
 export const _global: GlobalPayload = {
   favicon,
